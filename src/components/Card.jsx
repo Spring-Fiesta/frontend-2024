@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import "../styles/coreTeamCard.css";
 
 import back from "../images/back.png";
-import front from "../images/front.png";
 
 const Card = ({ multiply, scrollYValue, x, y, photo, designation, name }) => {
   const [isFlipped, setIsFlipped] = useState(false);
@@ -16,7 +15,7 @@ const Card = ({ multiply, scrollYValue, x, y, photo, designation, name }) => {
     }
   }
 
-  const flipStatus = useMemo(() => {
+  useMemo(() => {
     if (scrollYValue > 250) {
       setIsFlipped(true);
     }
@@ -48,7 +47,7 @@ const Card = ({ multiply, scrollYValue, x, y, photo, designation, name }) => {
   const variantTablet = {
     shuffle: {
       rotate: multiply * 2 + "deg",
-      x: multiply * 15-40,
+      x: multiply * 15 - 40,
       y: Math.abs(multiply * 3.5),
       transition: {
         delay: 1,

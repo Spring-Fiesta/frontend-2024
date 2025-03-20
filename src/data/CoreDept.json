@@ -17,14 +17,20 @@
     },
     {
       "name": "Aditya Kanojiya",
-      "designation": "Co-Head Design",
+      "designation": "Design Mentor",
       "image": "/images/CoreTeam/Design_committee/Kanojiya.webp"
+    },
+    {
+      "name": "Antriksh Gupta",
+      "designation": "Design Mentor",
+      "image": "/images/CoreTeam/Design_committee/antrikesh.webp"
     },
     {
       "name": "VIREN MAKVANA",
       "designation": "Core Team Art",
       "image": "/images/CoreTeam/Abstract_committee/UI21CS67_VIREN_MAKVANA.webp"
     },
+    
     {
       "name": "Shubham Rathore",
       "designation": "Core Team Art",
@@ -216,6 +222,11 @@
       "name": "Swayam Behera",
       "designation": "Design Head",
       "image": "/images/CoreTeam/Developers/Swayam_Behera.webp"
+    },
+    {
+      "name": "Meet Harsoda",
+      "designation": "Volunteer",
+      "image": "/images/CoreTeam/Sports/Meet_Harsoda_head.webp"
     },
     {
       "name": "Yash Sojitra",

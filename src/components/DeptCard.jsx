@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import "../styles/coreTeamCard.css";
 
 import back from "../images/back.png";
-import front from "../images/front.png";
 
 const Card = ({ photo, designation, name }) => {
   const [isFlipped, setIsFlipped] = useState(true);
@@ -16,7 +15,7 @@ const Card = ({ photo, designation, name }) => {
     }
   }
 
-  return ( 
+  return (
     <motion.div
       className="flip-card-dept"
       onClick={handleFlip}
@@ -33,8 +32,7 @@ const Card = ({ photo, designation, name }) => {
           <div
             className="mem-image"
             style={{ backgroundImage: `url(${back})` }}
-          >
-          </div>
+          ></div>
         </div>
 
         <div className="flip-card-back" style={{ backgroundColor: "white" }}>

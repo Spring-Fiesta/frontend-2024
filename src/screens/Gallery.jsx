@@ -7,12 +7,10 @@ import GalleryBottom from "./GalleryBottom";
 const Gallery = () => {
   const clickit = useRef(null);
   const images = [
-    "/images/sample.jpg",
-    "/images/akash.svg",
-    "/images/akash.svg",
-    "/images/jesse.svg",
-    "/images/jesse.svg",
-    "/images/yash.svg"
+    "/images/DJSonal.webp",
+    "/images/Viveksamtani.webp",
+    // "/images/jesse.svg",
+    // "/images/yash.svg"
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -86,7 +84,8 @@ const Gallery = () => {
   return (
     <>  
     <Navbar />
-    <div className="carousel">
+    <p style={{color:"whitesmoke",fontSize:"20px",marginTop:"6%"}}>Our guests of honor</p>
+    <div className="carousel" style={{marginTop:"3%"}}>
         <div className="carousel-images">
         <AnimatePresence>
           <motion.img
