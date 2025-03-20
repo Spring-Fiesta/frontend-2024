@@ -1,0 +1,46 @@
+[
+    [
+        {
+            "time": "7:0 AM-10:00 AM",
+            "description": "Football (4 matches)"
+        },
+        {
+            "time": "10:00 AM onwards",
+            "description": "Corporate Crime"
+        },
+        {
+            "time": "11:30 AM-5:00 PM",
+            "description": "Exhibition"
+        },
+        {
+            "time": "11:00 AM-1:30 PM",
+            "description": "Startup Treasure"
+        },
+        {
+            "time": "2:00 PM-4:00 PM",
+            "description": "Hands-on-DSLR"
+        }
+    ],
+    [
+        {
+            "time": "2:00 PM-5:00 PM",
+            "description": "3v3 Coding"
+        },
+        {
+            "time": "3:00 PM-5:00 PM",
+            "description": "Rangoli Competition"
+        },
+        {
+            "time": "4:00 PM-5:00 PM",
+            "description": "Kabaddi Final"
+        },
+        {
+            "time": "4:00 PM-6:00 PM",
+            "description": "Lift - Off"
+        },
+        {
+            "time": "6:30 PM-10:00 PM",
+            "description": "Open Mic & Standup"
+        }
+    ]
+]

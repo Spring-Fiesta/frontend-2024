@@ -1,0 +1,28 @@
+[
+    [
+        {
+            "time": "6:30 AM - 10:30 AM",
+            "description": "Cricket (4 matches)"
+        },
+        {
+            "time": "11:00 AM - 1:30 PM",
+            "description": "Football (3 matches)"
+        },
+        {
+            "time": "2:00 PM - 4:00 PM",
+            "description": "Robo Race"
+        }
+        
+    ],
+    [
+        {
+            "time": "5:30 PM - 8:00 PM",
+            "description": "Cultural Programs"
+        },
+
+        {
+            "time": "8:00 PM - 10:00 PM",
+            "description": "DJ Night"
+        }
+    ]
+]

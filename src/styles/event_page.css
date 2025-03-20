@@ -1,0 +1,347 @@
+.event-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    /* margin-top: 3rem; */
+}
+
+.part-one{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #23203C;
+}
+
+.part-one-main{
+    width: calc(100% - 10vw);
+    margin-bottom: 15vh;
+}
+
+.head-1{
+    display: flex;
+    margin-top: 15vh;
+    justify-content: space-between;
+}
+
+.head-1-text{
+    font-size: 8vh;
+    text-align: left;
+    color: #FF204E;
+    font-family: 'Unbounded';
+    font-weight: 900;
+    text-shadow: -2px -2px 0 #000,  2px -2px 0 #000, -2px  2px 0 #000, 2px  2px 0 #000; 
+    letter-spacing: 0.45rem;
+}
+.head-2-text{
+    font-size: 8vh;
+    color: #FFFFFF;
+    text-align: right;
+    font-family: 'Unbounded';
+    text-shadow: -2px -2px 0 #000,  2px -2px 0 #000, -2px  2px 0 #000, 2px  2px 0 #000; 
+    letter-spacing: 0.45rem;
+}
+
+.part-one-sub-section{
+    display: flex;
+    margin-top: 5vh;
+    justify-content: space-between;
+}
+
+.part-one-sub-side-1{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 40%;
+    z-index: 10;
+}
+
+.sch-container{
+    margin: 3vh 0;
+    width: 100%;
+    border-bottom: 1px solid #FFFFFF;
+}
+
+.sch-head{
+    font-family: 'Unbounded';
+    font-size: 5vh;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+}
+
+.sch-content{
+    margin: 3vh 0;
+    letter-spacing: 0.020rem;
+    font-family: 'Unbounded';
+    font-weight: 400;
+    border-bottom: #000;
+}
+
+.part-one-sub-side-2{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 40%;
+    z-index: 10;
+}
+
+#hoppie{
+    position: absolute;
+    left: -5vw;
+    top : 25%;
+    height: 40%;
+    opacity: 0.15;
+    z-index: 1;
+}
+
+#joker{
+    position: absolute;
+    opacity: 0.25;
+    height: 50%;
+    bottom: 5vh;
+    right: 1vw;
+}
+
+.mid-line{
+    position: absolute;
+    width: 100%;
+}
+
+.part-two{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    background: #A0153E;
+}
+
+
+.part-two-main{
+    width: calc(100% - 10vw);
+    margin-bottom: 15vh;
+}
+
+.head-2{
+    margin-top: 10vh;
+}
+
+.head-2-text-1{
+    font-size: 8vh;
+    color: #FFFFFF;
+    text-align: left;
+    font-family: 'Unbounded';
+    text-shadow: -2px -2px 0 #000,  2px -2px 0 #000, -2px  2px 0 #000, 2px  2px 0 #000; 
+    letter-spacing: 0.45rem;
+}
+
+.part-two-sub-section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5vh;
+}
+
+.part-two-sub-side-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    z-index: 10;
+}
+
+.part-two-sub-side-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.pillar-part{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+
+#pillar{
+    position: absolute;
+    height: 80vh;
+    bottom: 0;
+}
+
+.part-three{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background: #4B0B35;
+}
+
+.part-three-main{
+    width: calc(100% - 10vw);
+    margin-bottom: 15vh;
+}
+
+.head-3{
+    display: flex;
+    justify-content: end;
+    margin-top: 10vh;
+}
+
+.head-3-text{
+    font-size: 8vh;
+    color: #FFFFFF;
+    text-align: right;
+    font-family: 'Unbounded';
+    text-shadow: -2px -2px 0 #000,  2px -2px 0 #000, -2px  2px 0 #000, 2px  2px 0 #000; 
+    letter-spacing: 0.45rem;
+}
+
+.part-three-sub-section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5vh;
+}
+
+.part-three-sub-side-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    z-index: 10;
+}
+
+.part-three-sub-side-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+}
+
+#balloon{
+    position: absolute;
+    height: 75vh;
+    left: -12vh;
+    bottom: 0;  
+    opacity: 0.25;
+}
+
+@media screen and (max-width: 1024px){
+    .head-1-text{
+        font-size: 6vh;
+        text-shadow: -1px -1px 0 #000,  1px -1px 0 #000, -1px  1px 0 #000, 1px  1px 0 #000; 
+    }
+    .head-2-text{
+        font-size: 6vh;
+        text-shadow: -1px -1px 0 #000,  1px -1px 0 #000, -1px  1px 0 #000, 1px  1px 0 #000; 
+    }
+
+    .head-2-text-1{
+        font-size: 6vh;
+        text-shadow: -1px -1px 0 #000,  1px -1px 0 #000, -1px  1px 0 #000, 1px  1px 0 #000; 
+    }
+
+    .head-3-text{
+        font-size: 6vh;
+        text-shadow: -1px -1px 0 #000,  1px -1px 0 #000, -1px  1px 0 #000, 1px  1px 0 #000; 
+    }
+
+    .sch-container{
+        margin: 1vh 0;
+    }
+
+    .sch-head{
+        font-size: 4vh;
+    }
+    .sch-content{
+        font-size: 2vh;
+    }
+
+    #hoppie{
+        left: -15vw;
+        height: 50vh;
+    }
+
+    #joker{
+        height: 50vh;
+    }
+
+    #pillar{
+        height: 70vh;
+        opacity: 0.25;
+    }
+
+    #balloon{
+        height: 70vh;
+        left: -10vh;
+    }
+}
+
+
+
+@media screen and (max-width: 768px){
+    .event-main{
+        margin-top: 1rem;
+    }
+
+    .head-1{
+        margin-top: 5vh;
+    }
+
+    .head-1-text{
+        letter-spacing: 0.3rem;
+        font-size: 3vh;
+        text-shadow: -1px -1px 0 #000,  1px -1px 0 #000, -1px  1px 0 #000, 1px  1px 0 #000; 
+    }
+    .head-2-text{
+        letter-spacing: 0.3rem;
+        font-size: 3vh;
+        text-shadow: -1px -1px 0 #000,  1px -1px 0 #000, -1px  1px 0 #000, 1px  1px 0 #000; 
+    }
+
+    .head-2-text-1{
+        letter-spacing: 0.3rem;
+        font-size: 3vh;
+        text-shadow: -1px -1px 0 #000,  1px -1px 0 #000, -1px  1px 0 #000, 1px  1px 0 #000; 
+    }
+
+    .head-3-text{
+        letter-spacing: 0.3rem;
+        font-size: 3vh;
+        text-shadow: -1px -1px 0 #000,  1px -1px 0 #000, -1px  1px 0 #000, 1px  1px 0 #000; 
+    }
+
+    .sch-container{
+        margin: 1vh 0;
+    }
+
+    .sch-head{
+        font-size: 2vh;
+    }
+    .sch-content{
+        font-size: 1.5vh;
+    }
+
+    #hoppie{
+        left: -20vw;    
+        height: 35vh;
+    }
+
+    #joker{
+        height: 30vh;
+    }
+    
+    #pillar{
+        height: 60vh;
+        opacity: 0.25;
+    }
+
+    #balloon{
+        height: 60vh;
+        left: -10vh;
+    }
+}

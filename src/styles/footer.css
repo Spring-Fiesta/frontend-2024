@@ -1,0 +1,113 @@
+h3 {
+    margin: 0.4rem 4rem;
+    font-size: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer {
+    text-decoration: none;
+    display: flex;
+    height: 26rem;
+    width: 100%;
+    padding: 6rem;
+    justify-content: space-between;
+    background:url("../images/footerBack.png") ;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    /* margin-bottom: 60%; */
+}
+
+.back {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* z-index: -1; */
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.logo div{
+    margin: 0 2rem;
+    width: 10rem;
+    height: auto;
+}
+.logo img {
+    width: 100%;
+}
+
+.iiit-logo {
+    height: 30% !important;
+}
+
+@media only screen and (max-width: 1200px) {
+    .footer{
+        height: 22rem;
+    }
+    h3 {
+        font-size: 1.4rem;
+        margin: 0.4rem 2rem;
+    }
+    .logo div {
+        width: 6rem;
+    }
+    .back{
+        padding: 2.5rem;
+    }
+}
+@media only screen and (max-width: 862px) {
+    .footer{
+        height: 22rem;
+    }
+    h3 {
+        font-size: 1.2rem;
+        margin: 0.4rem 1.4rem;
+    }
+    .logo div {
+        width: 5rem;
+        margin: 1rem;
+    }
+    .back{
+        padding: 2rem;
+    }
+}
+@media only screen and (max-width: 670px) {
+    .footer{
+        height: 40rem;
+    }
+    h3 {
+        font-size: 1.2rem;
+        margin: 0.4rem 1.4rem;
+    }
+    .logo div {
+        width: 5rem;
+        margin: 1rem;
+    }
+    .back{
+        padding: 2rem;
+        flex-direction: column;
+    }
+}

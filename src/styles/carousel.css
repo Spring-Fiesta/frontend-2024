@@ -1,0 +1,154 @@
+.carousel {
+  width: 100%;
+  margin-top: 4rem;
+}
+
+.carousel-images {
+    position: relative;
+    border-radius: 10px;
+    height: 500px;
+    margin: auto;
+    overflow: hidden;
+  }
+
+.carousel-images img {
+    width: 100%;
+    height: 99%;
+    border-radius: 8px;
+  }
+  .slide_direction {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .left,
+  .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 10px;
+    height: 25px;
+    width: 25px;
+  }
+  .left {
+    left: 0;
+  }
+  .right {
+    right: 0;
+  }
+  .carousel-indicator {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  .dot {
+    background-color: #333;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+  }
+  .active {
+    background-color: #fa2020;
+  }
+  
+  /* .slide-img{
+    width: 100%;
+    height: 400px;
+  } */
+
+
+  /* :root {
+    --swiper-theme-color: #e5e5e5 !important;
+  } */
+  
+  /* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap'); */
+  
+  /* body {
+    background: #141414;
+    font-family: 'Roboto', sans-serif;
+    color: #e5e5e5;
+    overflow-x: hidden;
+  } */
+  
+  .container {
+    margin: 3rem 0;
+    color: white;
+  }
+  
+  .swiper-container {
+    overflow: hidden;
+  }
+  
+  p {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all 300ms ease-in-out;
+    border-radius: 5px;
+  }
+  
+  .swiper-slide img {
+    border-radius: 20px;
+    width: 90%;
+    height: 400px;
+    cursor: grab;
+  }
+  
+  .swiper-slide img:active {
+    cursor: grabbing;
+  }
+  
+  .swiper-slide:hover {
+    transform: scale(1.5);
+    transition: all 300ms ease-in-out;
+    transition-delay: 300ms;
+    z-index: 1;
+  }
+  
+  .swiper-slide:hover img {
+    transition-delay: 300ms;
+    box-shadow: 0 0 5px 1px rgba(0,0,0,0.5);
+  }
+  
+  @media screen and (max-width: 599px) {
+
+    p{
+      font-size: 1.5rem;
+    }
+
+    .swiper-slide img {
+      width: 90%;
+      max-width: 14rem;
+      height: 250px;
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+
+    p{
+      font-size: 1.5rem;
+    }
+
+    .swiper-slide img {
+      max-width: 10.5rem;
+      width: 90%;
+      height: 250px;
+    }
+  }

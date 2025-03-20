@@ -1,0 +1,26 @@
+[
+    {
+        "image":"/images/image1.svg",
+        "like":"/images/heart.svg"
+    },
+    {
+        "name" : "akash",
+        "image":"/images/image1.svg",
+        "like":"/images/heart.svg"
+    },
+    {
+        "name" : "prateek",
+        "image":"/images/image1.svg",
+        "like":"/images/heart.svg"
+    },
+    {
+        "name" : "shradhesh",
+        "image":"/images/image1.svg",
+        "like":"/images/heart.svg"
+    },
+    {
+        "name" : "yash",
+        "image":"/images/image1.svg",
+        "like":"/images/heart.svg"
+    }
+]

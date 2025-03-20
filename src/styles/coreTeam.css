@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  background-color: #23203C;
+
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+body {
+  font: bold 1.4rem "Unbounded", sans-serif;
+}
+
+/* navbar styles */
+
+nav {
+  width: 100%;
+  padding: 2rem 0;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  text-decoration: none;
+  width: 100%;
+  list-style-type: none;
+}
+
+/* Heading Styles */
+
+.heading {
+  font-size: clamp(1rem, 2vw, 2.8rem);
+  color: white;
+  margin: 3rem auto;
+  text-align: center;
+}
+
+.heading h1 {
+  padding-bottom: 1rem;
+}
+
+.circle {
+  height: 150vw;
+  width: 150vw;
+  position: absolute;
+  top: 50vw;
+  left: 50vw;
+  transform: translate(-40%, 0);
+  border: 1rem solid brown;
+  border-radius: 50%;
+}
+
+.bg-wrapper {
+  position: relative;
+}
+
+.card-bg {
+  width: 200vw;
+  height: 200vw;
+  border-radius: 50%;
+  background-color: #1A172B;
+  position: absolute;
+  top: 0;
+  border: 1rem solid #844F2E;
+  left: -49%;
+}
+
+.flip-card {
+  position: absolute;
+  top: 3rem;
+  left: 43vw;
+  transform: translate(0, 0);
+}
+
+.card-wrapper {
+  position: sticky;
+  top: 2rem;
+  height: 100%;
+  width: 100%;
+}
+
+.dept {
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+
+@keyframes moveSlideshow {
+  100% {
+    transform: translateX(-520px);
+  }
+}
+
+@media only screen and (max-width: 965px) {
+  .flip-card {
+    left: 38vw;
+  }
+}
+
+@media only screen and (max-width: 798px) {
+  .heading {
+    margin: 1rem auto 1rem auto;
+  }
+}
+
+@media only screen and (max-width: 500) {
+  .heading {
+    margin: 1rem auto 1rem auto;
+  }
+  
+  .flip-card {
+    left: 38vw;
+  }
+}
+
+@media only screen and (max-width: 392px) {
+  .heading {
+    margin: 1rem auto 1rem auto;
+  }
+}

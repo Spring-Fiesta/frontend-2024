@@ -1,0 +1,31 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: #23203C !important;
+}
+
+@font-face {
+  font-family: 'Base-neue-bold';
+  src: url('../components/BaseNeueTrial-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Base-neue-Medium';
+  src: url('../components/BaseNeueTrial-Medium.ttf');
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
