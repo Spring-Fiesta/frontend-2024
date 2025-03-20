@@ -63,6 +63,8 @@
     margin: 3vh 0;
     width: 100%;
     border-bottom: 1px solid #FFFFFF;
+    cursor: pointer;
+    user-select: none;
 }
 
 .sch-head{
@@ -94,7 +96,7 @@
     top : 25%;
     height: 40%;
     opacity: 0.15;
-    z-index: 1;
+    z-index: -1;
 }
 
 #joker{

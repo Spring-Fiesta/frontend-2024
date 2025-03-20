@@ -21,8 +21,8 @@ const Home = () => {
         else{
             setScreenLoading(true);
             setTimeout(() => {
-            setScreenLoading(false);
-        }, 8000);
+                setScreenLoading(false);
+            }, 8000);
         }
         
         // eslint-disable-next-line

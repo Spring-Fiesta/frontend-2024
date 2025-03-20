@@ -1,46 +1,76 @@
 [
     [
         {
-            "time": "7:0 AM-10:00 AM",
-            "description": "Football (4 matches)"
+            "title": "Football (4 matches)",
+            "time": "7:00 AM-10:00 AM",
+            "description": "What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, but also the leap into electronic typesetting, remaining essentially unchanged.",
+            "link": "https://www.google.com",
+            "readmore" : "https://www.example.com"
         },
         {
+            "title": "Corporate Crime",
             "time": "10:00 AM onwards",
-            "description": "Corporate Crime"
+            "description": "This is a placeholder description. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "link": "https://www.example.com",
+            "readmore" : "https://www.example.com"
         },
         {
+            "title": "Exhibition",
             "time": "11:30 AM-5:00 PM",
-            "description": "Exhibition"
+            "description": "Exhibition event details. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "link": "https://www.example.com",
+            "readmore" : "https://www.example.com"
         },
         {
+            "title": "Startup Treasure",
             "time": "11:00 AM-1:30 PM",
-            "description": "Startup Treasure"
+            "description": "Startup event details. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+            "link": "https://www.example.com",
+            "readmore" : "https://www.example.com"
         },
         {
+            "title": "Hands-on-DSLR",
             "time": "2:00 PM-4:00 PM",
-            "description": "Hands-on-DSLR"
+            "description": "Photography workshop with DSLR cameras. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "link": "https://www.example.com",
+            "readmore" : "https://www.example.com"
         }
     ],
     [
         {
+            "title": "3v3 Coding",
             "time": "2:00 PM-5:00 PM",
-            "description": "3v3 Coding"
+            "description": "Competitive coding in teams of three. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "link": "https://www.example.com",
+            "readmore" : "https://www.example.com"
         },
         {
+            "title": "Rangoli Competition",
             "time": "3:00 PM-5:00 PM",
-            "description": "Rangoli Competition"
+            "description": "Art and creativity contest. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+            "link": "https://www.example.com",
+            "readmore" : "https://www.example.com"
         },
         {
+            "title": "Kabaddi Final",
             "time": "4:00 PM-5:00 PM",
-            "description": "Kabaddi Final"
+            "description": "Final match of the Kabaddi tournament. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "link": "https://www.example.com",
+            "readmore" : "https://www.example.com"
         },
         {
+            "title": "Lift - Off",
             "time": "4:00 PM-6:00 PM",
-            "description": "Lift - Off"
+            "description": "Aerospace and engineering event. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "link": "https://www.example.com",
+            "readmore" : "https://www.example.com"
         },
         {
+            "title": "Open Mic & Standup",
             "time": "6:30 PM-10:00 PM",
-            "description": "Open Mic & Standup"
+            "description": "Comedy and storytelling event. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "link": "https://www.example.com",
+            "readmore" : "https://www.example.com"
         }
     ]
 ]

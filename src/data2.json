@@ -1,30 +1,48 @@
 [
     [
         {
+            "title": "Cricket (5 matches)",
             "time": "6:30 AM - 2 PM",
-            "description": "Cricket (5 matches)"
+            "description": "Exciting cricket matches featuring competitive teams. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "link": "https://www.example.com",
+            "readmore" : "https://www.example.com"
         },
         {
+            "title": "Stock Mania",
             "time": "9:00 AM - 3:30 PM",
-            "description": "Stock Mania"
+            "description": "Stock trading simulation event where participants test their market skills. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "link": "https://www.example.com",
+            "readmore" : "https://www.example.com"
         },
         {
+            "title": "Debate",
             "time": "1:00 PM - 2:00 PM",
-            "description": "Debate"
+            "description": "A thrilling debate competition where participants argue on intriguing topics. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "link": "https://www.example.com",
+            "readmore" : "https://www.example.com"
         },
         {
+            "title": "Art Workshop",
             "time": "1:00 PM - 3:00 PM",
-            "description": "Art Workshop"
+            "description": "A creative art workshop for learning various artistic techniques. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "link": "https://www.example.com",
+            "readmore" : "https://www.example.com"
         }
     ],
     [
         {
+            "title": "Speaker Session",
             "time": "5:30 PM - 6:45 PM",
-            "description": "Speaker Session"
+            "description": "An inspiring speaker session featuring renowned experts. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "link": "https://www.example.com",
+            "readmore" : "https://www.example.com"
         },
         {
+            "title": "Cultural Programs",
             "time": "7:00 PM - 9:30 PM",
-            "description": "Culturat Programs"
+            "description": "A showcase of vibrant cultural performances and artistic talent. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+            "link": "https://www.example.com",
+            "readmore" : "https://www.example.com"
         }
     ]
 ]
