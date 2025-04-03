@@ -63,7 +63,7 @@ const Home = () => {
           <div className="page3_text">
             <h1>About Fest</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur. Duis accumsan tempor
+              lorem ipsum dolor sit amet consectetur. Duis accumsan tempor
               cursus nulla eros mauris consectetur commodo. Id enim adipiscing
               ultrices enim tellus suscipit. Cursus malesuada convallis
             </p>
