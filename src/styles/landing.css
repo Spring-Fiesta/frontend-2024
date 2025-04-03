@@ -5,9 +5,9 @@ html, body {
   height: 100%;
   width: 100%;
   box-sizing: border-box;
-  overflow: hidden;
+  overflow-y: auto;
   margin:0;
-  
+  scroll-behavior: smooth; 
 }
 
 
@@ -15,6 +15,7 @@ html, body {
   position: relative;
   z-index: 10;
   background-color:white;
+  
   
 }
 .page1 {
@@ -61,36 +62,56 @@ background-size: 400.00px 400.00px;
   left: 0;
   width: 100vw; /* Full screen width */
   height: 100vw; /* Full screen height */
-  z-index: 20;
+  z-index: 40;
   cursor: pointer; /* Clickable */
-  transition: top 2s ease-in-out; /* Smooth transition */
+  transition: top 4s ease-in-out; /* Smooth transition */
   padding: 0;
 }
 
 .entry_img{
   object-fit: cover;
   width: 100%;
+  margin-bottom: 0;
+  
   
 }
 .page1 img{
   width:100%;
   height: 100%;
   /* object-fit: cover; */
-  
 }
-.spring_logo{
-  width:fit-content;
-  height: 15vw;
+@keyframes rotateClockwise {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.spring_logo {
+  width: fit-content;
+  height: 23vw;
   position: absolute;
-  left: 42%;
-  top: 20%;
-  /* border:2px solid white; */
+  left: 37.5%;
+  top: 25%;
+  transition: transform 3s ease-in-out; /* Smooth transition */
 }
-.spring_logo img{
+
+.spring_logo img {
   object-fit: cover;
   height: 100%;
   width: 100%;
 }
+
+.spring_logo:hover {
+  animation: rotateClockwise 3s linear infinite;
+}
+
+
+
+
 .page2_1{
   position: absolute;
   top:20vh;
@@ -99,25 +120,26 @@ background-size: 400.00px 400.00px;
   display:flex;
   flex-direction: column;
   width: 50vw;
-  height: 40vh;
+  height: 43vh;
   justify-content: space-between;
 }
 .page2_1 p{
-  font-weight: 400;
-  font-size: 2.2vw;
+  font-weight: 300;
+  font-size: 2vw;
   line-height: 100%;
   letter-spacing: 0%;
   color:#ffffff;
-  font-family:Roboto;
+  font-family: 'Unbounded';
 }
 
 .page2_1 h1{
-  font-weight: 600;
-  font-size: 4vw;
+  font-weight: 500;
+  font-size: 3vw;
   line-height: 100%;
   letter-spacing: 0%;
   color:#ffffff;
-  font-family:Roboto;
+  font-family: 'Unbounded';
+  
 }
 
 .page2_2{
@@ -159,26 +181,26 @@ background-size: 400.00px 400.00px;
 }
 
 .page3_text p{
-  font-weight: 400;
-  font-size: 2.2vw;
+  font-weight: 300;
+  font-size: 2vw;
   line-height: 100%;
   letter-spacing: 0%;
   color:#ffffff;
-  font-family:Roboto;
+  font-family: 'Unbounded';
   position: absolute;
   left: 0;
   bottom: 4vh;
 } 
 
 .page3_text h1{
-  font-weight: 600;
-  font-size: 4vw;
+  font-weight: 500;
+  font-size: 3vw;
   line-height: 100%;
   letter-spacing: 0%;
   color:#ffffff;
   font-family:Roboto;
   position: absolute;
-  left:32%;
+  left:38%;
   top: -25px;
 
 }
@@ -194,5 +216,195 @@ background-size: 400.00px 400.00px;
 }
 .footer{
 position: relative;
+
+}
+
+@media (max-width:600px){
+
+.nav-main{ 
+  display: none!important;
+}
+
+
+.entry {
+  position: fixed; /* Ensures it covers the whole page */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Full screen width */
+  height: 125vh; /* Full screen height */
+  z-index: 40;
+  cursor: pointer; /* Clickable */
+  transition: top 4s ease-in-out; /* Smooth transition */
+  padding: 0;
+}
+
+.entry_img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0;
+  
+}
+
+.page1 {
+  height:70vh;
+ width:100vw;
+ position: relative;
+ box-sizing: border-box;
+ background-color:#2f0521;
+}
+
+.page1 img{
+  width:100%;
+  height: 100%;
+  object-fit:cover;
+}
+.spring_logo{
+  width:fit-content;
+  height: 50vw;
+  position: absolute;
+  left: 23%;
+  top: 24%;
+  /* border:2px solid white; */
+}
+.spring_logo img{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+
+
+.page2 {
+  min-height: 75vh;
+  width:100vw;
+  position: relative;
+  box-sizing: border-box;
+  background-image: linear-gradient(90deg, #a01539 25%, #870f35 25%, #870f35 50%, #a01539 50%, #a01539 75%, #870f35 75%, #870f35 100%);
+  background-size: 400.00px 400.00px;
+  top:0;
+} 
+
+.page3{
+  min-height:75vh;
+  width:100vw;
+  position:relative;
+  box-sizing: border-box;
+  /* border:2px solid black; */
+  background-image: linear-gradient(0deg, #13132b 25%, #1a1a3a 25%, #1a1a3a 50%, #13132b 50%, #13132b 75%, #1a1a3a 75%, #1a1a3a 100%);
+background-size: 400.00px 400.00px;
+
+}
+.page4{
+  height:fit-content;
+  width:100vw;
+  position: relative;
+  /* border:2px solid black; */
+  box-sizing: border-box;
+  margin-bottom: 0;
+  
+}
+.page2_1{
+  position: absolute;
+  top:13vh;
+  left:6vw;
+  /* border: 2px solid black; */
+  display:flex;
+  flex-direction: column;
+  width: 90vw;
+  height: 45vh;
+  justify-content:space-evenly;
+  z-index: 12;
+}
+
+.page2_1 p{
+  font-weight: 500;
+  font-size: 5vw;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color:#ffffff;
+  font-family: 'Unbounded';
+}
+
+.page2_1 h1{
+  font-weight: 700;
+  font-size: 10vw;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color:#ffffff;
+  font-family:Roboto;
+}
+
+.page2_2{
+  position: absolute;
+  right: 15vh;
+  bottom: 0;
+  width:fit-content;
+  height: 65vh;
+  /* border:2px solid white; */
+  
+}
+.page2_2 img{
+  height: 100%;
+  opacity: 0.4;
+}
+
+.holder{
+  height: 99px;
+  width: 100%;
+  /* border: 2px solid black; */
+  bottom:50px;
+  position: relative;
+  z-index: 12;
+  margin-bottom: 0;
+}
+.holder img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.page3_text{
+  position: absolute;
+  top:15vh;
+  left:6vw;
+  display:flex;
+  flex-direction: column;
+  width: 90vw;
+  height: 49vh;
+  justify-content:space-evenly;
+  z-index: 12;
+  /* border: 2px solid white; */
+}
+
+.page3_text p{
+  font-weight: 500;
+  font-size: 6vw;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color:#ffffff;
+  font-family:Roboto;
+  bottom: 6.9vh;
+} 
+
+.page3_text h1{
+  font-weight: 600;
+  font-size: 7vw;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color:#ffffff;
+  font-family: 'Unbounded';
+  position: absolute;
+  left:22.8%;
+}
+
+.page4 img{
+  width: 100%;
+  height: 100%;
+  object-fit:contain;
+}
+
+
+
+
 
 }

@@ -6,9 +6,9 @@
     width: 100%;
     font-size: 3vh;
     padding:3rem 0 0 0;
-    background-color: #232036;
-    position: sticky;
-    z-index: 12;
+    background-color: transparent;
+    position:fixed;
+    z-index: 20;
 }
 
 .nav-logo{

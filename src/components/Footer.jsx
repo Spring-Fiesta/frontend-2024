@@ -3,8 +3,8 @@ import iiit_logo from '../images/iiit_surat.png'
 import spring from '../images/Spring.png'
 const Footer = () => {
   return (
-    <div className='mt-[10px] md:mt-[60px] bg-black'>
-         <div className='flex justify-start md:justify-between items-center h-full py-4 md:py-12 md:px-8'>
+    <div className=' bg-black'>
+         <div className='flex padding-bottom:10vw justify-start md:justify-between items-center h-full py-4 md:py-5 md:px-8 '>
             <div className='flex flex-col'>
                 <div className='md:flex md:gap-4 mt-2 md:mt-16  md:ml-20'>
                     <div className='w-20 md:w-28 scale-75 md:scale-100'>
