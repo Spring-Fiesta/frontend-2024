@@ -23,6 +23,7 @@
   transform: scale(1.15);
   z-index: 1;
   border-radius: 24px;
+  
 }
 
 .carousel-foreground {
@@ -61,7 +62,7 @@
   top: 50%;
   transform: translateY(-50%);
   background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(4px);
+ 
   border: none;
   border-radius: 50%;
   width: 46px;
@@ -150,5 +151,11 @@
       transform: translateX(0%);
       opacity: 1;
     }
+  }
+}
+
+@media (max-width:600px){
+  .fullscreen-carousel{
+height: 38vh!important;
   }
 }
