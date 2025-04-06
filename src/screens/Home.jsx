@@ -1,6 +1,5 @@
 import { useRef } from "react";
 import "../styles/landing.css";
-import group from "../images/Group.png";
 import path140 from "../images/path140.png";
 import group152 from "../images/Group_152.png";
 import group104 from "../images/Group_104.png"
@@ -11,6 +10,7 @@ import curtains from "../images/curtains.svg";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Carousel from "../components/Carousel";
+import newlogo from "../images/newlogo.png";
 
 console.log(group1765731);
 
@@ -40,7 +40,7 @@ const Home = () => {
         <div className="page1">
           <img src={path140} alt="img" />
           <div className="spring_logo">
-            <img src={group} alt="img" />
+            <img src={newlogo} alt="img" />
           </div>
         </div>
 
