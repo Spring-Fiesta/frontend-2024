@@ -7,6 +7,8 @@
     font-size: 3vh;
     padding:3rem 0 0 0;
     background-color: transparent;
+    position:fixed;
+    z-index: 20;
 }
 
 .nav-logo{
@@ -18,11 +20,21 @@
     width: 100%;
     justify-content: space-evenly;
     list-style: none;
+    position: sticky;
+    z-index: 12;
+    /* border:2px solid white; */
+    
 }
 
-.nav-li > a{
+.nav-li{
+    /* border:2px solid white; */
+    margin-bottom: 2vw;
+}
+.nav-li  a{
     text-decoration: none;
     color: #FFFFFF;
+    /* border:2px solid white; */
+    
 }
 
 .border-cross{
@@ -138,5 +150,5 @@
         transform: rotate(-45deg) translate(35px, 35px);
       }
 }
-
+            
 

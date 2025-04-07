@@ -1,0 +1,492 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik&display=swap');
+
+html, body {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-y: auto;
+  margin:0;
+  scroll-behavior: smooth; 
+}
+
+
+.main{
+  position: relative;
+  z-index: 10;
+  background-color:white;
+  
+  
+}
+.page1 {
+   height:94vh;
+  width:100vw;
+  position: relative;
+  box-sizing: border-box;
+  background-color:#2f0521;
+}
+
+.page2 {
+  min-height: 100vh;
+  width:100vw;
+  position: relative;
+  box-sizing: border-box;
+  background-image: linear-gradient(90deg, #a01539 25%, #870f35 25%, #870f35 50%, #a01539 50%, #a01539 75%, #870f35 75%, #870f35 100%);
+  background-size: 400.00px 400.00px;
+  top:0
+} 
+
+.page3{
+  min-height:100vh;
+  width:100vw;
+  position:relative;
+  box-sizing: border-box;
+  /* border:2px solid black; */
+  background-image: linear-gradient(0deg, #13132b 25%, #1a1a3a 25%, #1a1a3a 50%, #13132b 50%, #13132b 75%, #1a1a3a 75%, #1a1a3a 100%);
+background-size: 400.00px 400.00px;
+
+}
+.page4{
+  min-height:100vh;
+  width:100vw;
+  position: relative;
+  /* border:2px solid black; */
+  box-sizing: border-box;
+  margin-bottom: 0;
+  background-color: #fde5a8;
+ 
+}
+
+.entry {
+  position: fixed; /* Ensures it covers the whole page */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Full screen width */
+  height: 100vw; /* Full screen height */
+  z-index: 40;
+  cursor: pointer; /* Clickable */
+  transition: top 4s ease-in-out; /* Smooth transition */
+  padding: 0;
+}
+
+.entry_img{
+  object-fit: cover;
+  width: 100%;
+  margin-bottom: 0;
+  
+  
+}
+.page1 img{
+  width:100%;
+  height: 100%;
+  /* object-fit: cover; */
+}
+@keyframes rotateClockwise {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.spring_logo {
+  width: fit-content;
+  height: 23vw;
+  position: absolute;
+  left: 37.5%;
+  top: 25%;
+  transition: transform 3s ease-in-out; /* Smooth transition */
+}
+
+.spring_logo img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.spring_logo:hover {
+  animation: rotateClockwise 3s linear infinite;
+}
+
+
+
+
+.page2_1{
+  position: absolute;
+  top:20vh;
+  left:6.8vw;
+  /* border: 2px solid black; */
+  display:flex;
+  flex-direction: column;
+  width: 50vw;
+  height: 43vh;
+  justify-content: space-between;
+}
+.page2_1 p{
+  font-weight: 300;
+  font-size: 2vw;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color:#ffffff;
+  font-family: 'Unbounded';
+}
+
+.page2_1 h1{
+  font-weight: 500;
+  font-size: 3vw;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color:#ffffff;
+  font-family: 'Unbounded';
+  
+}
+
+.page2_2{
+  position: absolute;
+  right: 28vh;
+  bottom: 0;
+  width:fit-content;
+  height: 35vw;
+  /* border:2px solid white; */
+  
+}
+.page2_2 img{
+  height: 100%;
+}
+
+.holder{
+  height: 98.43px;
+  width: 100%;
+  /* border: 2px solid black; */
+  bottom:50px;
+  position: relative;
+  z-index: 12;
+  margin-bottom: 0;
+}
+.holder img{
+  width: 100%;
+  height: 100%;
+  
+}
+.page3_text{
+  /* border: 2px solid white; */
+  position: absolute;
+  width: 60vw;
+  height: 42vh;
+  left: 19%;
+  top:30%;
+  text-align: center;
+  /* border:2px solid white; */
+}
+
+.page3_text p{
+  font-weight: 300;
+  font-size: 2vw;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color:#ffffff;
+  font-family: 'Unbounded';
+  position: absolute;
+  left: 0;
+  bottom: 4vh;
+} 
+
+.page3_text h1{
+  font-weight: 500;
+  font-size: 3vw;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color:#ffffff;
+  font-family:Roboto;
+  position: absolute;
+  left:38%;
+  top: -25px;
+
+}
+
+.page4 .img1{
+  height: 100%;
+  width: fit-content;
+  position: absolute;
+  left: 0;
+  z-index: 20;
+}
+.page4 .img2{
+  width: fit-content;
+  height: 100%;
+  position:absolute;
+  right: 0;
+  z-index: 20;
+}
+
+.page4 .img1 img{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.page4 .img2 img{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+
+.carousel{
+width: 60%;
+height: 80%;
+z-index: 5;
+/* border: 5px solid rgb(230, 24, 24); */
+left:20%;
+position: absolute;
+margin-top: 6%;
+margin-bottom: 2%;
+
+}
+
+[data-scroll-container] {
+  overflow: hidden;
+}
+.footer{
+position: relative;
+
+}
+
+@media (max-width:600px){
+
+.nav-main{ 
+  display: none!important;
+}
+
+
+.entry {
+  position: fixed; /* Ensures it covers the whole page */
+  top: 0;
+  left: 0;
+  width: 100vw; /* Full screen width */
+  height: 125vh; /* Full screen height */
+  z-index: 40;
+  cursor: pointer; /* Clickable */
+  transition: top 4s ease-in-out; /* Smooth transition */
+  padding: 0;
+}
+
+.entry_img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0;
+  
+}
+
+.page1 {
+  height:70vh;
+ width:100vw;
+ position: relative;
+ box-sizing: border-box;
+ background-color:#2f0521;
+}
+
+.page1 img{
+  width:100%;
+  height: 100%;
+  object-fit:cover;
+}
+.spring_logo{
+  width:fit-content;
+  height: 50vw;
+  position: absolute;
+  left: 23%;
+  top: 24%;
+  /* border:2px solid white; */
+}
+.spring_logo img{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+
+
+.page2 {
+  min-height: 75vh;
+  width:100vw;
+  position: relative;
+  box-sizing: border-box;
+  background-image: linear-gradient(90deg, #a01539 25%, #870f35 25%, #870f35 50%, #a01539 50%, #a01539 75%, #870f35 75%, #870f35 100%);
+  background-size: 400.00px 400.00px;
+  top:0;
+} 
+
+.page3{
+  min-height:75vh;
+  width:100vw;
+  position:relative;
+  box-sizing: border-box;
+  /* border:2px solid black; */
+  background-image: linear-gradient(0deg, #13132b 25%, #1a1a3a 25%, #1a1a3a 50%, #13132b 50%, #13132b 75%, #1a1a3a 75%, #1a1a3a 100%);
+background-size: 400.00px 400.00px;
+z-index: 30;
+
+}
+.page4{
+  min-height: 60vh;
+  width:100vw;
+  position: relative;
+  /* border:2px solid black; */
+  box-sizing: border-box;
+  margin-bottom: 0;
+
+
+}
+.page2_1{
+  position: absolute;
+  top:13vh;
+  left:6vw;
+  /* border: 2px solid black; */
+  display:flex;
+  flex-direction: column;
+  width: 90vw;
+  height: 45vh;
+  justify-content:space-evenly;
+  z-index: 12;
+}
+
+.page2_1 p{
+  font-weight: 500;
+  font-size: 5vw;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color:#ffffff;
+  font-family: 'Unbounded';
+}
+
+.page2_1 h1{
+  font-weight: 700;
+  font-size: 10vw;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color:#ffffff;
+  font-family:Roboto;
+}
+
+.page2_2{
+  position: absolute;
+  right: 15vh;
+  bottom: 0;
+  width:fit-content;
+  height: 65vh;
+  /* border:2px solid white; */
+  
+}
+.page2_2 img{
+  height: 100%;
+  opacity: 0.4;
+}
+
+.holder{
+  height: 99px;
+  width: 100%;
+  /* border: 2px solid black; */
+  bottom:50px;
+  position: relative;
+  z-index: 12;
+  margin-bottom: 0;
+}
+.holder img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.page3_text{
+  position: absolute;
+  top:15vh;
+  left:6vw;
+  display:flex;
+  flex-direction: column;
+  width: 90vw;
+  height: 49vh;
+  justify-content:space-evenly;
+  z-index: 12;
+  /* border: 2px solid white; */
+}
+
+.page3_text p{
+  font-weight: 500;
+  font-size: 6vw;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color:#ffffff;
+  font-family:Roboto;
+  bottom: 6.9vh;
+} 
+
+.page3_text h1{
+  font-weight: 600;
+  font-size: 7vw;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color:#ffffff;
+  font-family: 'Unbounded';
+  position: absolute;
+  left:22.8%;
+}
+
+
+
+
+.page4 .img1 {
+  height: 100%;
+  width:42%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 20;
+
+
+  
+}
+
+/* Right Curtain */
+.page4 .img2 {
+  height: 100%;
+  width: 42%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 20;
+  
+}
+.page4 .img1 img{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  margin-left:-10% ;
+}
+
+.page4 .img2 img{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  margin-left :10%!important;
+}
+
+.carousel{
+  width: 55%;
+  height: 53%;
+  z-index: 5;
+  left:22.5%;
+  position: absolute;
+  margin-top: 32.2%;
+  margin-bottom: 2%;
+  
+  }
+
+
+ 
+
+
+
+}
