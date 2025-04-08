@@ -7,8 +7,8 @@
     font-size: 3vh;
     padding:3rem 0 0 0;
     background-color: transparent;
-    position:fixed;
-    z-index: 20;
+    position:sticky;
+   
 }
 
 .nav-logo{

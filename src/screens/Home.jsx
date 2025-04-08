@@ -7,7 +7,7 @@ import leftcurtain from "../images/leftcurtain.png";
 import rightcurtain from "../images/rightcurtain.png";
 import group1765731 from "../images/Grop_1765731.png";
 import curtains from "../images/curtains.svg";
-import Navbar from "../components/Navbar";
+import Navbar_home from "../components/Navbar_home";
 import Footer from "../components/Footer";
 import Carousel from "../components/Carousel";
 import newlogo from "../images/newlogo.png";
@@ -34,7 +34,7 @@ const Home = () => {
       <div className="entry" onClick={handleScroll}>
         <img src={curtains} alt="curtain" className="entry_img" />
       </div>
-      <Navbar/>
+      <Navbar_home />
 
       <div className="main" ref={mainRef}>
         <div className="page1">
@@ -77,13 +77,15 @@ const Home = () => {
 
         <div className="page4">
           <div className="img1">
-          <img src={leftcurtain} alt="img" />
+            <img src={leftcurtain} alt="img" />
           </div>
 
-      <div className="img2">
-          <img src={rightcurtain} alt="img" />
+          <div className="img2">
+            <img src={rightcurtain} alt="img" />
           </div>
-          <div className="carousel"><Carousel/></div>
+          <div className="carousel">
+            <Carousel />
+          </div>
         </div>
         <Footer />
       </div>

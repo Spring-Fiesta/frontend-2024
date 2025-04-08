@@ -81,23 +81,15 @@ background-size: 400.00px 400.00px;
   height: 100%;
   /* object-fit: cover; */
 }
-@keyframes rotateClockwise {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 
 .spring_logo {
   width: fit-content;
   height: 23vw;
   position: absolute;
-  left: 37.5%;
-  top: 25%;
-  transition: transform 3s ease-in-out; /* Smooth transition */
+  left: 39.5%;
+  top: 15%;
+
 }
 
 .spring_logo img {
@@ -106,9 +98,6 @@ background-size: 400.00px 400.00px;
   width: 100%;
 }
 
-.spring_logo:hover {
-  animation: rotateClockwise 3s linear infinite;
-}
 
 
 
@@ -296,10 +285,10 @@ position: relative;
 }
 .spring_logo{
   width:fit-content;
-  height: 50vw;
+  height: 60vw;
   position: absolute;
-  left: 23%;
-  top: 24%;
+  left: 24%;
+  top: 15%;
   /* border:2px solid white; */
 }
 .spring_logo img{
@@ -483,10 +472,5 @@ z-index: 30;
   margin-bottom: 2%;
   
   }
-
-
- 
-
-
 
 }
