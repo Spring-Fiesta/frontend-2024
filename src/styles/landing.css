@@ -474,3 +474,271 @@ z-index: 30;
   }
 
 }
+
+
+/* Add these media queries to your existing CSS */
+
+/* iPad Mini (768x1024) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .page1 {
+    height: 70vh;
+  }
+  
+  .spring_logo {
+    height: 30vw;
+    left: 35%;
+    top: 20%;
+  }
+  
+  .page2{
+    height: 70vh!important;
+  }
+  .page2_1 {
+    width: 60vw;
+    top: 8vh;
+    z-index: 10;
+  }
+  
+  .page2_1 h1 {
+    font-size: 10vw!important;
+  }
+  
+  .page2_1 p {
+    font-size:4vw!important;
+    font-weight: 400!important;
+  }
+  
+  .page2_2 {
+    height: 40vw;
+    right: 8vw;
+    height: 70vh;
+    z-index: 2;
+    opacity: 0.4;
+  }
+
+  
+  .page3_text {
+    width: 75vw;
+    left: 15%;
+    /* border: 2px solid white; */
+    position: absolute;
+    
+  }
+
+  .page3_text h1{
+    font-size: 10vw!important;
+    position: absolute;
+    left: 20%!important;
+    
+  }
+  .page3_text  p{
+    font-size:4vw!important;
+    font-weight: 400!important;
+  }
+  
+  .carousel {
+    width: 70%;
+    left: 15%;
+    margin-top: 10%;
+  }
+}
+
+
+/* iPad Air (820x1180) and iPad Pro 11" (834x1194) */
+@media (min-width: 820px) and (max-width: 1194px) {
+  .spring_logo {
+    height: 35vw;
+    left: 33.5%;
+  }
+  .page2{
+    height: 60vh!important;
+  }
+  
+  .page2_1 {
+    top: 10vh;
+    /* border: 2px solid white; */
+    width: 70vw!important;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+  }
+  .page3_text {
+    width: 75vw;
+    left: 12%;
+    /* border: 2px solid white; */
+    position: absolute;
+    
+  }
+
+  .page3_text h1{
+    font-size: 10vw!important;
+    position: absolute;
+    left: 18%!important;
+    margin-top: 0;
+    
+  }
+  .page3_text  p{
+    font-size:4vw!important;
+    font-weight: 400!important;
+  }
+  
+  .page3_text {
+    top: 35%;
+  }
+}
+
+
+
+
+/* iPad Pro 12.9" (1024x1366) */
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .spring_logo {
+    height: 35vw!important;
+    left: 33.5%!important;
+  }
+  
+  .page2{
+    height: 60vh!important;
+  }
+
+  .page2_1 {
+    top: 15vh;
+  }
+  
+  .page3_text {
+    top: 30%;
+    left: 8%;
+    width: 85vw!important;
+  }
+  .page3_text h1{
+    font-size: 10vw!important;
+    position: absolute;
+    left: 24%!important;
+    margin-top: 0;
+    
+  }
+}
+
+/* Surface Pro 7 (912x1368) */
+@media (min-width: 912px) and (max-width: 1368px) {
+.spring_logo {
+    height: 35vw!important;
+    left: 33.5%!important;
+  }
+  
+  .page2{
+    height: 60vh!important;
+  }
+
+  .page2_1 {
+    top: 15vh;
+  }
+  
+  .page3_text {
+    top: 30%;
+    left: 8%;
+    width: 85vw!important;
+  }
+  .page3_text h1{
+    font-size: 10vw!important;
+    position: absolute;
+    left: 24%!important;
+    margin-top: 0;
+    
+  }
+}
+
+
+/* Landscape Orientation for Tablets */
+@media (max-width: 1025px) and (orientation: landscape) {
+  .page1, .page2, .page3 {
+    min-height: 120vh;
+  }
+  
+  .spring_logo {
+    height: 25vw;
+    top: 10%;
+  }
+  
+  .page2_1 {
+    top: 15vh;
+  }
+  
+  .page2_2 {
+    height: 30vw;
+  }
+  
+  .carousel {
+    margin-top: 8%;
+  }
+}
+
+/* Adjustments for smaller tablets (600px-768px) */
+@media (min-width: 601px) and (max-width: 768px) {
+  .spring_logo {
+    height: 35vw;
+    left: 32.5%;
+  }
+  
+  .page2_1 {
+    width: 70vw;
+    left: 5vw;
+  }
+  
+  .page2_1 h1 {
+    font-size: 5vw;
+  }
+  
+  .page2_1 p {
+    font-size: 3vw;
+  }
+  
+  .page3_text {
+    width: 80vw;
+    left: 10%;
+  }
+  
+  .page3_text h1 {
+    font-size: 4vw;
+    left: 30%;
+  }
+  
+  .page3_text p {
+    font-size: 3vw;
+  }
+  
+  .carousel {
+    width: 80%;
+    left: 10%;
+  }
+}
+
+/* Adjustments for very large phones (phablets) */
+@media (min-width: 601px) and (max-width: 767px) and (orientation: portrait) {
+  .page1, .page2, .page3 {
+    min-height: 100vh;
+  }
+  
+  .spring_logo {
+    height: 45vw;
+    left: 27.5%;
+  }
+  
+  .page2_1 h1 {
+    font-size: 6vw;
+  }
+  
+  .page2_1 p {
+    font-size: 4vw;
+  }
+  
+  .page3_text h1 {
+    font-size: 4vw;
+  }
+  
+  .page3_text p {
+    font-size: 4vw;
+  }
+}
