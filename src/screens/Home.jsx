@@ -23,7 +23,7 @@ const Home = () => {
   };
 
   return (
-    <>
+    <div>
       {/* Apply smooth scrolling */}
       <style>{`
         html {
@@ -91,7 +91,7 @@ const Home = () => {
         </div>
         <Footer />
       </div>
-    </>
+    </div>
   );
 };
 

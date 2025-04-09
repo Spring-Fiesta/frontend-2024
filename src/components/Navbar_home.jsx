@@ -1,4 +1,4 @@
-import React, {useRef} from "react";
+import React, { useRef } from "react";
 import "../styles/navbar_home.css";
 import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -12,15 +12,15 @@ const Navbar_home = () => {
   const HandleLogout = () => {
     localStorage.removeItem("token");
     window.location.reload();
-  }
-   
+  };
+
   const menuBtnHandler = () => {
     menuBtn.current.classList.toggle("open");
     navUl.current.classList.toggle("active");
   };
 
   return (
-    <motion.div 
+    <motion.div
       className="nav-main_h"
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
@@ -60,19 +60,21 @@ const Navbar_home = () => {
             <div className="border-cross_h"></div>
           )}
         </li>
-        <li className="nav-li_h"> 
-          {!localStorage.getItem("token") ? 
+        <li className="nav-li_h">
+          {!localStorage.getItem("token") ? (
             <>
               <Link to="/register">Login</Link>
               {location.pathname === "/register" && (
                 <div className="border-cross_h"></div>
-              )} 
+              )}
             </>
-            :
+          ) : (
             <>
-              <Link to="/" onClick={HandleLogout}>Logout</Link>
+              <Link to="/" onClick={HandleLogout}>
+                Logout
+              </Link>
             </>
-          }
+          )}
         </li>
       </ul>
       <div className="menu-btn_h" ref={menuBtn} onClick={menuBtnHandler}>
