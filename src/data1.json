@@ -1,76 +1,50 @@
 [
     [
         {
-            "title": "Football (4 matches)",
-            "time": "7:00 AM-10:00 AM",
-            "description": "What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, but also the leap into electronic typesetting, remaining essentially unchanged.",
-            "link": "https://www.google.com",
-            "readmore" : "https://www.example.com"
+            "time": "09:00-11:00 AM",
+            "title": "Code Relay",
+            "description": "A race against time, logic, and teamwork! The Code Relay Competition is a unique programming challenge where teams of three members will collaborate to solve coding problems in a relay format. Each member will have limited time to write their part of the solution before passing it to the next teammate. The final code will be evaluated based on correctness and efficiency. Teams consist of 3 members. The first teammate begins coding and, after the allotted time, passes the code to the next teammate. The second and third teammates continue the implementation without direct communication. The final solution will be evaluated for accuracy, efficiency, and completeness.",
+            "link": "https://unstop.com/o/6BfyvEs?lb=RrLnVks"
         },
         {
-            "title": "Corporate Crime",
-            "time": "10:00 AM onwards",
-            "description": "This is a placeholder description. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-            "link": "https://www.example.com",
-            "readmore" : "https://www.example.com"
+            "time": "11:00 AM-01:00 PM",
+            "title": "Imagine-a-thon",
+            "description": "Format: Online Round (Inter-College): Participants submit AI-generated images based on given themes. Offline Finale (IIIT Surat): Selected teams compete live, recreating images using AI tools in a time-based challenge.",
+            
+            "link": "https://unstop.com/hackathons/image-ai-thon-prompt-engineering-challenge-spring-fiesta-indian-institute-of-information-technology-iiit-sura-1442814"
         },
         {
-            "title": "Exhibition",
-            "time": "11:30 AM-5:00 PM",
-            "description": "Exhibition event details. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-            "link": "https://www.example.com",
-            "readmore" : "https://www.example.com"
+            "time": "11:00 AM-01:00 PM",
+            "title": "Front-end Challenge",
+            "description": "The Frontend Challenge is an exclusive event for 1st and 2nd-year students of IIIT Surat, designed to enhance their HTML & CSS skills through a hands-on, competitive experience. Participants will compete on CSSBattle.dev, where they will have 1 hour to recreate and enhance web designs using only HTML and CSS—no frameworks, no JavaScript, just pure frontend mastery! This challenge aims to sharpen students’ UI/UX design skills, improve their CSS precision, and foster a competitive learning environment. Key Features: Beginner-Friendly: Only basic HTML & CSS required. Strictly Offline: No AI assistance allowed; monitored closely. Competitive & Engaging: Encourages speed, creativity, and UI/UX improvements. Real-Time Coding Challenge: Builds skills in structured web design.",
+            
+            "link": "https://tinyurl.com/frontend-challenge"
         },
         {
-            "title": "Startup Treasure",
-            "time": "11:00 AM-1:30 PM",
-            "description": "Startup event details. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-            "link": "https://www.example.com",
-            "readmore" : "https://www.example.com"
-        },
-        {
-            "title": "Hands-on-DSLR",
-            "time": "2:00 PM-4:00 PM",
-            "description": "Photography workshop with DSLR cameras. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-            "link": "https://www.example.com",
-            "readmore" : "https://www.example.com"
+            "time": "01:00-03:00 PM",
+            "title": "IPL Auction",
+            "description": "Bid. Strategize. Build Your Dream Team! Step into the shoes of a franchise owner and experience the thrill of an IPL-style auction! This event is designed for cricket enthusiasts who love the game, understand team dynamics, and can think strategically under pressure. Participants will engage in intense bidding wars, using a virtual budget to assemble the strongest possible cricket team. Event Format: Participants will receive a fixed virtual budget for bidding. Players with different skill sets and performances will be up for auction. The goal is to create a balanced and competitive cricket team. Smart bidding and strategic decision-making will determine the winner.",
+            
+            "link": "https://unstop.com/competitions/ipl-auction-spring-fiesta-indian-institute-of-information-technology-iiit-surat-1444194"
         }
     ],
     [
         {
-            "title": "3v3 Coding",
-            "time": "2:00 PM-5:00 PM",
-            "description": "Competitive coding in teams of three. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-            "link": "https://www.example.com",
-            "readmore" : "https://www.example.com"
+            "time": "04:00-06:00 PM",
+            "title": "Robo Sumo",
+            "description": "Build. Battle. Dominate! Step into the ultimate robotic showdown where engineering meets strategy! RoboSumo challenges participants to design and build wired or wireless robots capable of engaging in a push-out battle. The goal? Outmaneuver, overpower, and push the opponent’s bot out of the arena while maintaining control of your own. This event tests your skills in robotics, strategy, and control, giving you a real-world application of robotic combat principles. Event Format: Participants will design and operate their custom-built robots. The objective is to force the opponent’s robot out of the arena. The battle follows a knockout format—win to advance to the next round. Robots must maintain control of their movement while executing strategic attacks. The final rounds will determine the RoboSumo Champion!",
+           
+            "link": "https://unstop.com/competitions/robo-sumo-spring-fiesta-indian-institute-of-information-technology-iiit-surat-1443436"
         },
         {
-            "title": "Rangoli Competition",
-            "time": "3:00 PM-5:00 PM",
-            "description": "Art and creativity contest. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-            "link": "https://www.example.com",
-            "readmore" : "https://www.example.com"
+            "time": "06:00-09:00 PM",
+            "title": "Open Mic",
+            "description": ""
         },
         {
-            "title": "Kabaddi Final",
-            "time": "4:00 PM-5:00 PM",
-            "description": "Final match of the Kabaddi tournament. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-            "link": "https://www.example.com",
-            "readmore" : "https://www.example.com"
-        },
-        {
-            "title": "Lift - Off",
-            "time": "4:00 PM-6:00 PM",
-            "description": "Aerospace and engineering event. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-            "link": "https://www.example.com",
-            "readmore" : "https://www.example.com"
-        },
-        {
-            "title": "Open Mic & Standup",
-            "time": "6:30 PM-10:00 PM",
-            "description": "Comedy and storytelling event. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-            "link": "https://www.example.com",
-            "readmore" : "https://www.example.com"
+            "time": "09:00-10:30 PM",
+            "title": "Standup Show",
+            "description": ""
         }
     ]
 ]

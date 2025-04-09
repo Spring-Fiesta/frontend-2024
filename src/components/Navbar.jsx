@@ -1,16 +1,37 @@
 import React, {useRef} from "react";
 import "../styles/navbar.css";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import Spring from "../images/Spring.png";
 
 const Navbar = () => {
+  const BACKEND = process.env.REACT_APP_BACKEND;
   const location = useLocation();
   const menuBtn = useRef();
+  const navigate = useNavigate();
 
-  const HandleLogout = () => {
-    localStorage.removeItem("token");
-    window.location.reload();
+  const handleLogout = () => {
+    localStorage.removeItem('token');
+    // Clear HttpOnly cookies Also
+    fetch(`${BACKEND}/api/teams/logout`, {
+      method: 'GET',
+      credentials: 'include',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    })
+      .then((response) => {
+        if (response.ok) {
+          console.log('Logout successful');
+        } else {
+          console.error('Logout failed');
+        }
+      })
+      .catch((error) => {
+        console.error('Error during logout:', error);
+      });
+
+    navigate('/');
   }
    
   const menuBtnHandler = () => {
@@ -48,8 +69,8 @@ const Navbar = () => {
           )}
         </li>
         <li className="nav-li">
-          <Link to="/voting">Voting Page</Link>
-          {location.pathname === "/voting" && (
+          <Link to="/sponsors">Sponsors</Link>
+          {location.pathname === "/sponsors" && (
             <div className="border-cross"></div>
           )}
         </li>
@@ -59,20 +80,11 @@ const Navbar = () => {
             <div className="border-cross"></div>
           )}
         </li>
-        <li className="nav-li"> 
-          
-          {!localStorage.getItem("token") ? 
-          <>
-            <Link to="/register">Login</Link>
-            {location.pathname === "/register" && (
-              <div className="border-cross"></div>
-            )} 
-          </>
-          :
-          <>
-            <Link to="/" onClick={HandleLogout}>Logout</Link>
-          </>
-          }
+        <li className="nav-li">
+          <Link to="/corporate-crime">Corporate Crime</Link>
+          {location.pathname === "/corporate-crime" && (
+            <div className="border-cross"></div>
+          )}
         </li>
       </ul>
       <div className="menu-btn" ref={menuBtn} onClick={menuBtnHandler} >

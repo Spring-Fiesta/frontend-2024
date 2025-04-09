@@ -1,41 +1,72 @@
 [
     [
         {
-            "title": "Cricket (4 matches)",
-            "time": "6:30 AM - 10:30 AM",
-            "description": "Exciting cricket matches featuring competitive teams. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-            "link": "https://www.example.com",
-            "readmore" : "https://www.example.com"
+            "time": "09:00 AM - 11:00 AM",
+            "title": "Cadmania (Online)",
+            "description": "CADMANIA is an annual 3D modeling competition organized as part of the Spring Fiesta 2025 at Indian Institute of Information Technology, Surat. The event aims to challenge participants’ technical expertise, creativity, and problem-solving skills in CAD modeling. The competition will be conducted entirely online, allowing participants to compete remotely. The problem statement will be released on 8th April 2025 at 10:00 AM. Participants will have 96 hours (4 days) to complete their designs. The final submission deadline is 12th April 2025 at 10:00 AM.",
+            "link": "https://www.google.com"
         },
         {
-            "title": "Football (3 matches)",
-            "time": "11:00 AM - 1:30 PM",
-            "description": "Intense football matches showcasing talent and teamwork. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-            "link": "https://www.example.com",
-            "readmore" : "https://www.example.com"
+            "time": "09:00 AM - 11:00 AM",
+            "title": "CircuitJam (Online)",
+            "description": "Circuit Jam is an exciting and intellectually stimulating circuit design competition aimed at testing participants’ knowledge, creativity, and problem-solving skills in analog, digital, and embedded systems. The event provides a platform for students to design, optimize, and troubleshoot circuits while adhering to real-world constraints. Round 1: Quiz & PDF Evaluation (10th April 2025) Round 2: Circuit Design Challenge.",
+            "link": "https://unstop.com/competitions/circuit-jam-spring-fiesta-indian-institute-of-information-technology-iiit-surat-1443813"
         },
         {
-            "title": "Robo Race",
-            "time": "2:00 PM - 4:00 PM",
-            "description": "A thrilling robotics competition where robots race to victory. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-            "link": "https://www.example.com",
-            "readmore" : "https://www.example.com"
+            "time": "09:00 AM - 11:00 AM",
+            "title": "Brandathon",
+            "description": "Brandathon is an exciting competition designed to challenge creative minds in branding, marketing, and business strategy. Open to college students, it provides a platform to develop innovative brand solutions, conduct market analysis, and pitch ideas to industry experts. The event consists of multiple rounds, including ideation, business model development, and a final pitch, where participants showcase their creativity, strategic thinking, and problem-solving skills.",
+            "link": "https://unstop.com/competitions/brandathon-innovate-strategize-and-pitch-spring-fiesta-indian-institute-of-information-technology-iiit-sura-1441593"
+        },
+        {
+            "time": "09:00 AM - 11:00 AM",
+            "title": "Squid Game",
+            "description": "Squid Game: Escape Room is a thrilling logic, coding, and puzzle-solving challenge designed to test problem-solving skills, logical reasoning, and cybersecurity awareness. This event blends coding, decoding, and algorithmic thinking with interactive digital puzzles that increase in difficulty at each level. Phase 1: Easy Puzzle & Logic Round (Elimination Round) Phase 2: Medium Puzzles Phase 3: The Final Cyber Escape (Time-Based Ultimate Challenge).",
+            "link": "https://unstop.com/quiz/squid-game-escape-room-spring-fiesta-indian-institute-of-information-technology-iiit-surat-1444467"
+        },
+        {
+            "time": "11:00 AM - 01:00 PM",
+            "title": "Debugging",
+            "description": "Think you have what it takes to spot and fix errors like a pro? Welcome to the Code Debugging Competition, where your debugging skills will be put to the ultimate test! Participants will be challenged with a series of buggy programs, and the goal is to identify and fix the errors in the shortest possible time. Participants will receive a set of buggy programs. They must analyze, debug, and correct the code within the given time. Each round will introduce more complex errors, testing logic, syntax, and problem-solving skills. The fastest and most accurate debuggers will move forward to the next rounds.",
+            "link": "https://unstop.com/o/wcSnihJ?lb=RrLnVks"
+        },
+        {
+            "time": "01:00 PM - 03:00 PM",
+            "title": "Dev Heat Finale",
+            "description": "Dev Heat is IIIT Surat’s flagship inter-college hackathon, where students tackle real-world problems with innovative full-stack solutions. The competition consists of a 1-week online idea submission (via Unstop) followed by an intensive offline presentation, where top teams code, build, and present their final projects. Event Type: Hybrid (Online + Offline) Online Round (1 Week): Idea submission and prototype building. Offline Finale (2 Hours): Full project live pitching and Interview. Domains: AI, FinTech, Healthcare, EdTech, Sustainability Team Size: 2-4 participants per team.",
+            "link": "https://unstop.com/hackathons/dev-heat-hackathon-spring-fiesta-indian-institute-of-information-technology-iiit-surat-1442105"
         }
     ],
     [
         {
-            "title": "Cultural Programs",
-            "time": "5:30 PM - 8:00 PM",
-            "description": "A vibrant cultural showcase featuring music, dance, and drama. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-            "link": "https://www.example.com",
-            "readmore" : "https://www.example.com"
+            "time": "01:00 PM - 03:00 PM",
+            "title": "Yuva Sansad",
+            "description": "Coming Soon…",
+            "link": "https://www.google.com"
         },
         {
+            "time": "04:00 PM - 06:00 PM",
+            "title": "Cultural Showdown",
+            "description": "",
+            "link": "https://www.google.com"
+        },
+        {
+            "time": "06:00 PM - 07:45 PM",
+            "title": "Speaker Session",
+            "description": "",
+            "link": "https://www.google.com"
+        },
+        {
+            "time": "07:45 PM - 09:00 PM",
+            "title": "Cultural Showdown",
+            "description": "",
+            "link": "https://www.google.com"
+        },
+        {
+            "time": "09:30 PM - 11:00 PM",
             "title": "DJ Night",
-            "time": "8:00 PM - 10:00 PM",
-            "description": "An electrifying night of music and dance with top DJs. Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-            "link": "https://www.example.com",
-            "readmore" : "https://www.example.com"
+            "description": "",
+            "link": "https://www.google.com"
         }
     ]
 ]

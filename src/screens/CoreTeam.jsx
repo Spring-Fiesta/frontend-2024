@@ -175,7 +175,7 @@ const CoreTeam = () => {
         </motion.div>
       </motion.div>
       <motion.div
-        className="dept"
+        className="dept mb-10"
         animate={{ y: finalMotion[finalMotion.length - 1].y + 450 }}
         transition={{ duration:0.3, ease:"easeInOut" }}
       >

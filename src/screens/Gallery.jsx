@@ -1,152 +1,155 @@
-import { useRef, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import React, { useState, useEffect, useRef, useCallback } from "react";
+import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import Navbar from "../components/Navbar";
-import '../styles/carousel.css';
-import GalleryBottom from "./GalleryBottom";
+import "../styles/gallery.css";
+import Footer from "../components/Footer";
 
-const Gallery = () => {
-  const clickit = useRef(null);
-  const images = [
-    "/images/DJSonal.webp",
-    "/images/Viveksamtani.webp",
-    // "/images/jesse.svg",
-    // "/images/yash.svg"
-  ];
+const images = Array.from({ length: 30 }, (_, i) => ({
+  id: i + 1,
+  src: `/images/gallerySlider/image${i + 1}.webp`,
+  alt: `image${i + 1}`,
+}));
 
+export default function Gallery() {
+  const [selectedImage, setSelectedImage] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [direction, setDirection] = useState(null);
+  const [carouselIndex, setCarouselIndex] = useState(0);
+  const [direction, setDirection] = useState("next");
 
+  const intervalRef = useRef();
 
-  const slideVariants = {
-    hiddenRight: {
-      x: "100%", 
-      opacity: 0,
-    },
-    hiddenLeft: { 
-      x: "-100%",
-      opacity: 0,
-    },
-    visible: {
-      x: "0",
-      opacity: 1,
-      transition: {
-        duration: 1,
-      },
-    },
-    exit: {
-      opacity: 0,
-      scale: 0.8,
-      transition: {
-        duration: 0.5,
-      },
-    },
-  };
-  const slidersVariants = {
-    hover: {
-      scale: 1.2,
-    },
-  };
-  const dotsVariants = {
-    initial: {
-      y: 0,
-    },
-    animate: {
-      y: -10,
-      scale: 1.2,
-      transition: { type: "spring", stiffness: 1000, damping: "10" },
-    },
-    hover: {
-      scale: 1.1,
-      transition: { duration: 0.2 },
-    },
+  useEffect(() => {
+    intervalRef.current = setInterval(() => {
+      setDirection("next");
+      setCarouselIndex((prev) => (prev + 1) % images.length);
+    }, 4000);
+
+    return () => clearInterval(intervalRef.current);
+  }, []);
+
+  useEffect(() => {
+    document.body.style.overflow = selectedImage ? "hidden" : "auto";
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [selectedImage]);
+
+  const manualPrev = () => {
+    setDirection("prev");
+    setCarouselIndex((prev) => (prev - 1 + images.length) % images.length);
   };
 
-  const handleNext = () => {
-    setDirection("right");
-    setCurrentIndex((prevIndex) =>
-      prevIndex + 1 === images.length ? 0 : prevIndex + 1
-    );
+  const manualNext = () => {
+    setDirection("next");
+    setCarouselIndex((prev) => (prev + 1) % images.length);
   };
 
-  const handlePrevious = () => {
-    setDirection("left");
-
-    setCurrentIndex((prevIndex) =>
-      prevIndex - 1 < 0 ? images.length - 1 : prevIndex - 1
-    );
-  };
-
-  const handleDotClick = (index) => {
-    setDirection(index > currentIndex ? "right" : "left");
+  const openImage = (index) => {
+    setSelectedImage(images[index]);
     setCurrentIndex(index);
   };
 
+  const closeImage = () => setSelectedImage(null);
+
+  const prevImage = useCallback(() => {
+    const newIndex = (currentIndex - 1 + images.length) % images.length;
+    setSelectedImage(images[newIndex]);
+    setCurrentIndex(newIndex);
+  }, [currentIndex]);
+
+  const nextImage = useCallback(() => {
+    const newIndex = (currentIndex + 1) % images.length;
+    setSelectedImage(images[newIndex]);
+    setCurrentIndex(newIndex);
+  }, [currentIndex]);
+
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (!selectedImage) return;
+      if (e.key === "ArrowRight") nextImage();
+      if (e.key === "ArrowLeft") prevImage();
+      if (e.key === "Escape") closeImage();
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [selectedImage, nextImage, prevImage]);
+
   return (
-    <>  
-    <Navbar />
-    <p style={{color:"whitesmoke",fontSize:"20px",marginTop:"6%"}}>Our guests of honor</p>
-    <div className="carousel" style={{marginTop:"3%"}}>
-        <div className="carousel-images">
-        <AnimatePresence>
-          <motion.img
-            key={currentIndex}
-            src={images[currentIndex]}
-            initial={direction === "right" ? "hiddenRight" : "hiddenLeft"}
-            animate="visible"
-            exit="exit"
-            variants={slideVariants}
-          />
-        </AnimatePresence>
-        <div className="slide_direction">
-          <motion.div
-            variants={slidersVariants}
-            whileHover="hover"
-            className="left"
-            onClick={handlePrevious}
+    <div className="gallery-wrapper">
+      <Navbar />
+      <h1 className="gallery-title">Gallery</h1>
+
+      {/* Top Carousel */}
+      <div className="fullscreen-carousel">
+        <img
+          src={images[carouselIndex].src}
+          alt={images[carouselIndex].alt}
+          className="carousel-background"
+        />
+        <div className="carousel-foreground">
+          <div className="carousel-gradient" />
+          <div
+            className={`carousel-image-wrapper ${
+              direction === "next" ? "slide-in-right" : "slide-in-left"
+            }`}
+            key={carouselIndex}
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="20"
-              viewBox="0 96 960 960"
-              width="20"
-            >
-              <path fill="#fff" d="M400 976 0 576l400-400 56 57-343 343 343 343-56 57Z" />
-            </svg>
-          </motion.div>
-          <motion.div
-            ref={clickit}
-            variants={slidersVariants}
-            whileHover="hover"
-            className="right"
-            onClick={handleNext}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="20"
-              viewBox="0 96 960 960"
-              width="20"
-            >
-              <path fill="#fff" d="m304 974-56-57 343-343-343-343 56-57 400 400-400 400Z" />
-            </svg>
-          </motion.div>
+            <img
+              src={images[carouselIndex].src}
+              alt={images[carouselIndex].alt}
+              className="carousel-image"
+            />
+          </div>
+          <div className="carousel-overlay">
+            <button className="carousel-btn left-10 flex items-center justify-center" onClick={manualPrev}>
+              <ChevronLeft size={24} />
+            </button>
+            <button className="carousel-btn right-10 flex items-center justify-center" onClick={manualNext}>
+              <ChevronRight size={24} />
+            </button>
+          </div>
         </div>
       </div>
-      <div className="carousel-indicator">
-        {images.map((_, index) => (
-          <motion.div
-            key={index}
-            className={`dot ${currentIndex === index ? "active" : ""}`}
-            onClick={() => handleDotClick(index)}
-            initial="initial"
-            animate={currentIndex === index ? "animate" : ""}
-            whileHover="hover"
-            variants={dotsVariants}
-          ></motion.div>
+
+      {/* Grid */}
+      <div className="gallery-container">
+        {images.map((image, index) => (
+          <div
+            key={image.id}
+            className="gallery-item"
+            onClick={() => openImage(index)}
+          >
+            <img src={image.src} alt={image.alt} loading="lazy" />
+          </div>
         ))}
       </div>
-      <GalleryBottom />
+
+      {/* Lightbox */}
+      {selectedImage && (
+        <div className="dialog-container" onClick={closeImage}>
+          <div className="dialog-content" onClick={(e) => e.stopPropagation()}>
+            <div className="image-wrapper">
+              <button onClick={closeImage} className="close-btn" aria-label="Close">
+                <X size={20} />
+              </button>
+              <button onClick={prevImage} className="prev-btn" aria-label="Previous">
+                <ChevronLeft size={20} />
+              </button>
+              <img
+                src={selectedImage.src}
+                alt={selectedImage.alt}
+                className="selected-image"
+              />
+              <button onClick={nextImage} className="next-btn" aria-label="Next">
+                <ChevronRight size={20} />
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+      <div className="mb-14" />
+      <Footer/>
     </div>
-    </>
   );
-};
-export default Gallery;
+}

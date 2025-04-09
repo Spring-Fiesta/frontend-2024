@@ -52,7 +52,7 @@ const EventPage = () => {
           <div className="part-one-main">
             <div className="head-1">
               <h1 className='head-1-text'>EVENT<br />SCHEDULE</h1>
-              <h1 className='head-2-text'>11<br />APRIL</h1>
+              <h1 className='head-2-text'>10<br />APRIL</h1>
             </div>
             <div className="part-one-sub-section">
               <div className="part-one-sub-side-1">
@@ -84,7 +84,7 @@ const EventPage = () => {
           <img className='mid-line' src={Horizontal} alt="horioznal" />
           <div className="part-two-main">
             <div className="head-2">
-              <h1 className='head-2-text-1'>12<br />APRIL</h1>
+              <h1 className='head-2-text-1'>11<br />APRIL</h1>
             </div>
             <div className="part-two-sub-section">
               <div className="part-two-sub-side-1">
@@ -117,7 +117,7 @@ const EventPage = () => {
           <img className='mid-line' src={Horizontal} alt="horioznal" />
           <div className="part-three-main">
             <div className="head-3">
-              <h1 className='head-3-text'>13<br />APRIL</h1>
+              <h1 className='head-3-text'>12<br />APRIL</h1>
             </div>
             <div className="part-three-sub-section">
               <div className="part-three-sub-side-1">
