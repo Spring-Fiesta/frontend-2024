@@ -423,57 +423,71 @@ z-index: 30;
   left:22.8%;
 }
 
-
-
-
-.page4 .img1 {
-  height: 100%;
-  width:42%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 20;
-
-
-  
-}
-
-/* Right Curtain */
-.page4 .img2 {
-  height: 100%;
-  width: 42%;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 20;
-  
-}
-.page4 .img1 img{
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
-  margin-left:-10% ;
-}
-
-.page4 .img2 img{
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
-  margin-left :10%!important;
-}
-
 .carousel{
-  width: 55%;
-  height: 53%;
+  width: 90%;
+  height: 70%!important;
   z-index: 5;
-  left:22.5%;
+  left:5.6%;
   position: absolute;
-  margin-top: 32.2%;
+  margin-top: 25.2%;
   margin-bottom: 2%;
+  z-index: 20;
   
   }
 
+
+
+
+
+.Curtains {
+  border: 2px solid white;
+  width: 40%; /* Reduced from 50% */
+  display: flex!important;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto; /* Center the curtains */
 }
+
+.page4 .img1 {
+  width: 52%!important; /* Adjusted from 42% */
+  z-index: 10;
+}
+
+.page4 .img2 {
+  width: 52%!important;; /* Adjusted from 42% */
+  z-index: 10;
+  margin: 0;
+}
+
+.page4 .img1 img {
+  object-fit: cover;
+  width: 100%;
+  margin-left: -18%; /* Reduced from -10% */
+  margin-top: 0;
+}
+
+.page4 .img2 img {
+  object-fit: cover;
+  width: 100%;
+  margin-left: 18% !important; /* Reduced from 10% */
+  margin-top: 0;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Add these media queries to your existing CSS */
@@ -539,8 +553,45 @@ z-index: 30;
   .carousel {
     width: 70%;
     left: 15%;
-    margin-top: 10%;
+    margin-top: 15%;
+    z-index: 20;
   }
+
+  .Curtains {
+    border: 2px solid white;
+    width: 40%; /* Reduced from 50% */
+    display: flex!important;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto; /* Center the curtains */
+  }
+  
+  .page4 .img1 {
+    width: 53%!important; /* Adjusted from 42% */
+    z-index: 10;
+  }
+  
+  .page4 .img2 {
+    width: 53%!important;; /* Adjusted from 42% */
+    z-index: 10;
+    margin: 0;
+  }
+  
+  .page4 .img1 img {
+    object-fit: cover;
+    width: 100%;
+    margin-left: -20%; /* Reduced from -10% */
+    margin-top: 0;
+  }
+  
+  .page4 .img2 img {
+    object-fit: cover;
+    width: 100%;
+    margin-left: 20% !important; /* Reduced from 10% */
+    margin-top: 0;
+  }
+  
+
 }
 
 
@@ -587,6 +638,51 @@ z-index: 30;
   .page3_text {
     top: 35%;
   }
+  .carousel {
+    width: 80%;
+    left: 10%;
+    margin-top: 18%;
+    z-index: 20;
+  }
+
+  .Curtains {
+    border: 2px solid white;
+    width: 40%; /* Reduced from 50% */
+    display: flex!important;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto; /* Center the curtains */
+  }
+  
+  .page4 .img1 {
+    width: 57%!important; /* Adjusted from 42% */
+    z-index: 10;
+    margin: 0;
+  }
+  
+  .page4 .img2 {
+    width: 57%!important; /* Adjusted from 42% */
+    z-index: 10;
+    margin: 0;
+  }
+  
+  .page4 .img1 img {
+    object-fit: cover;
+    width: 100%;
+    margin-left: -22%; /* Reduced from -10% */
+    margin-top: 0;
+  }
+  
+  .page4 .img2 img {
+    object-fit: cover;
+    width: 100%;
+    margin-left: 22% !important; /* Reduced from 10% */
+    margin-top: 0;
+    
+  }
+  
+
+
 }
 
 
@@ -619,6 +715,10 @@ z-index: 30;
     margin-top: 0;
     
   }
+  .carousel {
+    margin-top: 20%!important;
+    z-index: 20;
+  }
 }
 
 /* Surface Pro 7 (912x1368) */
@@ -648,6 +748,25 @@ z-index: 30;
     margin-top: 0;
     
   }
+  .carousel {
+    width: 80%;
+    left: 10%;
+    margin-top: 19%;
+    z-index: 20;
+  }
+
+  .page4 .img1 {
+    width: 59%!important; /* Adjusted from 42% */
+    z-index: 10;
+    margin: 0;
+  }
+  
+  .page4 .img2 {
+    width: 59%!important; /* Adjusted from 42% */
+    z-index: 10;
+    margin: 0;
+  }
+
 }
 
 
@@ -672,6 +791,7 @@ z-index: 30;
   
   .carousel {
     margin-top: 8%;
+    z-index: 20;
   }
 }
 
@@ -712,7 +832,10 @@ z-index: 30;
   .carousel {
     width: 80%;
     left: 10%;
+    z-index: 20;
   }
+
+
 }
 
 /* Adjustments for very large phones (phablets) */
@@ -740,5 +863,11 @@ z-index: 30;
   
   .page3_text p {
     font-size: 4vw;
+  }
+  .carousel {
+    width: 70%;
+    left: 15%;
+    margin-top: 10%;
+    z-index: 20;
   }
 }

@@ -76,12 +76,14 @@ const Home = () => {
         </div>
 
         <div className="page4">
+          <div className="Curtains">
           <div className="img1">
             <img src={leftcurtain} alt="img" />
           </div>
 
           <div className="img2">
             <img src={rightcurtain} alt="img" />
+          </div>
           </div>
           <div className="carousel">
             <Carousel />
