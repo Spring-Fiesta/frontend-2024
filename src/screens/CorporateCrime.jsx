@@ -290,7 +290,7 @@ const CorporateCrime = () => {
             {content === 3 ? (
               <div>
                 <h1 className="text-2xl sm:text-4xl font-bold mb-4 text-red-600">
-                  Please Login in First
+                  Please Login First
                 </h1>
                 <div className="flex justify-center items-center mt-4">
                   <Button
