@@ -1,8 +1,8 @@
 [
   {
-    "name": "Harsh yadav",
+    "name": "Devansh Kushwaha",
     "designation": "Fest Secretary",
-    "image": "/images/CoreTeam/Harsh_Yadav.webp"
+    "image": "/images/CoreTeam/Devansh_Kushwaha.webp"
   },
   {
     "name": "Padam Mantry",
@@ -56,9 +56,9 @@
     "image": "images/CoreTeam/Cultural_committee/Chaitanya_Chandarkar_Head.webp"
   },
   {
-    "name": "Mayur Valecha",
+    "name": "Parkhar Mishra",
     "designation": "Core Team Coding",
-    "image": "/images/CoreTeam/Coding_Committee/Core/Mayur_valecha.webp"
+    "image": "/images/CoreTeam/Coding_Committee/Core/Parkhar_Mishra.webp"
   },
   {
     "name": "Nachos",
@@ -111,29 +111,39 @@
     "image": "images/CoreTeam/Robotics_committee/CORE/Sushant_core.webp"
   },
   {
-    "name": "Purv Patel",
+    "name": "Harhvardhan Mani Tripathi",
     "designation": "E-Summit Head",
-    "image": "images/CoreTeam/E-Summit_Committee/Heads/Purv_Patel.webp"
+    "image": "images/CoreTeam/E-Summit_Committee/Heads/Harshvardhan_Tripathi.webp"
   },
   {
-    "name": "Yogesh Kumawat",
-    "designation": "E-Summit Co-Head",
-    "image": "images/CoreTeam/E-Summit_Committee/Heads/Yogesh_Kumawat.webp"
+    "name": "Arya Trivedi",
+    "designation": "E-Summit Head",
+    "image": "images/CoreTeam/E-Summit_Committee/Heads/Arya_Trivedi.webp"
   },
   {
-    "name": "Aerin Patel",
+    "name": "Pratham Sachan",
     "designation": "E-Summit Co-Head",
-    "image": "images/CoreTeam/E-Summit_Committee/Co-Heads/Aerin_Patel.webp"
+    "image": "images/CoreTeam/E-Summit_Committee/Co-Heads/Pratham_Sachan.webp"
   },
   {
-    "name": "Heet Goyani",
+    "name": "Ruchita Agarwal",
     "designation": "E-Summit Co-Head",
-    "image": "images/CoreTeam/E-Summit_Committee/Co-Heads/Heet_Goyani.webp"
+    "image": "images/CoreTeam/E-Summit_Committee/Co-Heads/Ruchita_Agarwal.webp"
   },
   {
-    "name": "Kalpan Bariya",
+    "name": "Preksha Upadhyay",
     "designation": "E-Summit Co-Head",
-    "image": "images/CoreTeam/E-Summit_Committee/Co-Heads/Kalpan_Bariya.webp"
+    "image": "images/CoreTeam/E-Summit_Committee/Co-Heads/Preksha_Upadhyay.webp"
+  },
+  {
+    "name": "Bhumil Rangholiya",
+    "designation": "E-Summit Co-Head",
+    "image": "images/CoreTeam/E-Summit_Committee/Co-Heads/Bhumil_Rangholiya.webp"
+  },
+  {
+    "name": "Abhishek_Tiwari",
+    "designation": "E-Summit Co-Head",
+    "image": "images/CoreTeam/E-Summit_Committee/Co-Heads/Abhishek_Tiwari.webp"
   },
   {
     "name": "Danish Ansari",
