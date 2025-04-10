@@ -1,8 +1,10 @@
 import React from 'react'
 import iiit_logo from '../images/iiit_surat.png'
-import spring from '../images/Spring.png'
 import {Link} from 'react-router-dom'
 import Horizontal from '../components/horrizontal-pipe.svg'
+import new_logo from '../images/new_logo.png'
+
+
 
 
 const Footer = () => {
@@ -18,8 +20,8 @@ const Footer = () => {
                     <div className='w-20 md:w-28 scale-75 md:scale-100'>
                         <img src={iiit_logo} alt="IIIT Surat Logo" className='w-full h-auto' />
                     </div>
-                    <div className='w-20 md:w-44 scale-90 md:scale-100'>
-                        <img src={spring} alt="Spring Logo" className='w-full h-auto' />
+                    <div className='w-20 -mt-7 md:w-44 scale-90 md:scale-90'>
+                        <img src={new_logo} alt="Spring Logo" className='w-full h-auto' />
                     </div>
                 </div>
                 <div className='text-white hidden md:block text-xs md:text-lg font-normal mt-1 md:mt-4 md:ml-20'>

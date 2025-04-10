@@ -34,6 +34,7 @@ const Home = () => {
       <div className="entry" onClick={handleScroll}>
         <img src={curtains} alt="curtain" className="entry_img" />
       </div>
+      {/* eslint-disable-next-line react/jsx-pascal-case*/}
       <Navbar_home />
 
       <div className="main" ref={mainRef}>

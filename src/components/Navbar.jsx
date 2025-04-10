@@ -1,38 +1,12 @@
 import React, {useRef} from "react";
 import "../styles/navbar.css";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import Spring from "../images/Spring.png";
 
 const Navbar = () => {
-  const BACKEND = process.env.REACT_APP_BACKEND;
   const location = useLocation();
   const menuBtn = useRef();
-  const navigate = useNavigate();
-
-  const handleLogout = () => {
-    localStorage.removeItem('token');
-    // Clear HttpOnly cookies Also
-    fetch(`${BACKEND}/api/teams/logout`, {
-      method: 'GET',
-      credentials: 'include',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    })
-      .then((response) => {
-        if (response.ok) {
-          console.log('Logout successful');
-        } else {
-          console.error('Logout failed');
-        }
-      })
-      .catch((error) => {
-        console.error('Error during logout:', error);
-      });
-
-    navigate('/');
-  }
    
   const menuBtnHandler = () => {
       menuBtn.current.classList.toggle("open");

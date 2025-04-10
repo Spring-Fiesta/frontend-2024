@@ -2,17 +2,11 @@ import React, { useRef } from "react";
 import "../styles/navbar_home.css";
 import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
-import newlogo from "../images/newlogo.png";
 
 const Navbar_home = () => {
   const location = useLocation();
   const menuBtn = useRef();
   const navUl = useRef();
-
-  const HandleLogout = () => {
-    localStorage.removeItem("token");
-    window.location.reload();
-  };
 
   const menuBtnHandler = () => {
     menuBtn.current.classList.toggle("open");

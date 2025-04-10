@@ -12,12 +12,13 @@ import sbi_logo from '../images/sbi_logo.png'
 import ease_my_trip from '../images/ease_my_trip_logo.png'
 import mother_diary_logo from '../images/mother_diary_logo.png'
 import benq from '../images/benq.png'
+
 const Sponsors = () => {
   return (
     <div> 
         <Navbar />
         <div className='overflow-x-hidden min-h-screen overflow-hidden'>
-            <div className=' h-[75vh] grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-64 mt-10 relative'>
+            <div className=' sm:h-[75vh] grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-64 mt-10 relative'>
                 <div className='flex flex-col justify-start md:ml-12 lg:ml-24 md:justify-start items-center md:items-start relative z-10'>
                     <h1 className='text-white text-4xl md:text-5xl font-bold mb-6 md:mb-8'>
               Title Sponsor 
@@ -31,7 +32,7 @@ const Sponsors = () => {
                 </div>
             </div>
 
-            <div className=' h-[75vh] grid grid-cols-1 md:grid-cols-2 gap-2 mt-10 relative'>
+            <div className=' sm:h-[75vh] grid grid-cols-1 md:grid-cols-2  gap-2 lg:mt-20 relative'>
                 <div className='absolute inset-0 md:relative md:inset-auto flex justify-start items-center opacity-20 md:opacity-100'>
                     <img src={sponsors_img2} alt="Associate Sponsor" className='w-64 md:w-80 lg:w-96 h-auto object-contain' />
                 </div>
@@ -39,21 +40,21 @@ const Sponsors = () => {
                     <h1 className='text-white text-4xl md:text-5xl font-bold mb-6 md:mb-8 md:mr-5'>
                         Associate Sponsors
                     </h1>
-                    <div className='flex flex-wrap flex-row-reverse gap-4 md:gap-8 lg:gap-14 justify-center items-center md:mr-16 lg:mr-32'>
+                    <div className='w-96 grid grid-cols-2 gap-4 md:gap-8 lg:gap-40 justify-center items-center md:mr-16 lg:mr-32'>
                         <div className=' h-[100px] w-[150px] md:h-[120px] md:w-[200px] lg:h-[150px] lg:w-[250px]'>
                             <img src={sbi_logo} alt="" />
                         </div>
                         <div className=' h-[100px] w-[150px] md:h-[120px] md:w-[200px] lg:h-[150px] lg:w-[250px]'>
                         <img src={canara} alt="" />
                         </div>
-                        <div className=' h-[100px] w-[150px] md:h-[60px] mb-14 md:w-[200px] lg:h-[60px] lg:w-[250px]'>
+                        <div className=' h-[100px] w-[150px] md:h-[60px] mb-14 md:w-[200px] lg:h-[60px] lg:-mt-36 max-sm:ml-24 lg:ml-36 lg:w-[250px]'>
                         <img src={stockgro_logo} alt="" />
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div className='h-[75vh] grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 mt-10 md:mt-20 lg:mt-44 relative'>
+            <div className='sm:h-[75vh] grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 mt-10 md:mt-20 lg:mt-44 relative'>
                 <div className='flex flex-col justify-start md:ml-12 lg:ml-24 md:justify-start items-center md:items-start relative z-10'>
                     <h1 className='text-white text-4xl md:text-5xl font-bold mb-6 md:mb-8'>
                         Sponsors
@@ -62,13 +63,13 @@ const Sponsors = () => {
                         <div className=' h-[100px] w-[150px] md:h-[120px] md:w-[200px] lg:h-[150px] lg:w-[250px]'>
                         <img src={mother_diary_logo} alt="" />
                         </div>
-                        <div className=' h-[100px] w-[150px] md:h-[120px] md:w-[200px] lg:h-[150px] lg:w-[250px]'>
-                        <img src={km_logo} alt="" />
+                        <div className=' h-[100px] w-[150px] md:h-[120px] md:w-[200px] lg:h-[100px] lg:-mt-10 lg:w-[250px]'>
+                        <img src={km_logo} alt="" className='object-contain' />
                         </div>
                         <div className=' h-[60px] w-[150px] md:h-[120px] md:mt-14 lg:mb-10 md:w-[200px] lg:h-[150px] lg:w-[250px]'>
                         <img src={ease_my_trip} alt="" />
                         </div>
-                        <div className=' h-[100px] w-[150px] mt-7 lg:mt-16 md:h-[120px] md:w-[200px] lg:h-[150px] lg:w-[250px]'>
+                        <div className=' h-[100px] w-[150px] mt-7 lg:mt-20 md:h-[120px] md:w-[200px]  lg:h-[150px] lg:w-[250px]'>
                         <img src={mey_mey_logo} alt="" />
                         </div>
                     </div>

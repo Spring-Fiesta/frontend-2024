@@ -1,4 +1,4 @@
-import { Button, Input, TextField } from '@mui/material';
+import { Button, TextField } from '@mui/material';
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -29,6 +29,7 @@ const CorporateCrime = () => {
       const interval = setInterval(fetchQA, 10000);
       return () => clearInterval(interval);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [showLeaderboard]);
 
   useEffect(() => {
@@ -59,7 +60,7 @@ const CorporateCrime = () => {
     if (showLeaderboard) {
       fetchLeaderboard();
     }
-  }, [showLeaderboard]);
+  }, [BACKEND, showLeaderboard]);
 
   useEffect(() => {
     const fetchComp = async () => {
@@ -83,6 +84,7 @@ const CorporateCrime = () => {
       }
     };
     fetchComp();
+    // eslint-disable-next-line
   }, []);
 
   console.log(content);
