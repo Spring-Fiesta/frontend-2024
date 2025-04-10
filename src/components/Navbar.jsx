@@ -7,11 +7,6 @@ import Spring from "../images/Spring.png";
 const Navbar = () => {
   const location = useLocation();
   const menuBtn = useRef();
-
-  const HandleLogout = () => {
-    localStorage.removeItem("token");
-    window.location.reload();
-  }
    
   const menuBtnHandler = () => {
       menuBtn.current.classList.toggle("open");
@@ -59,20 +54,11 @@ const Navbar = () => {
             <div className="border-cross"></div>
           )}
         </li>
-        <li className="nav-li"> 
-          
-          {!localStorage.getItem("token") ? 
-          <>
-            <Link to="/register">Login</Link>
-            {location.pathname === "/register" && (
-              <div className="border-cross"></div>
-            )} 
-          </>
-          :
-          <>
-            <Link to="/" onClick={HandleLogout}>Logout</Link>
-          </>
-          }
+        <li className="nav-li">
+          <Link to="/corporate-crime">Corporate Crime</Link>
+          {location.pathname === "/corporate-crime" && (
+            <div className="border-cross"></div>
+          )}
         </li>
       </ul>
       <div className="menu-btn" ref={menuBtn} onClick={menuBtnHandler} >

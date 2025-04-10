@@ -6,13 +6,14 @@ import new_logo from '../images/new_logo.png'
 
 
 
-const Footer = () => {
-  return (
-    <div >
-      <img className='relative mid-line w-full' src={Horizontal} alt="horizontal" />
-        <div className='overflow-x-hidden mt-[10px] md:mt-[-45px] bg-black'>
 
-        
+const Footer = () => {
+
+  return (
+    <div className='relative'>
+      <img id='foot-line' className='absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full' src={Horizontal} alt="horizontal" />
+        <div className='overflow-x-hidden bg-black'>
+
          <div className='flex justify-between items-center h-full mt-10 py-4 md:py-12 md:px-6'>
             <div className='flex flex-col'>
                 <div className='md:flex md:gap-4 ml-6 mt-2 md:mt-16  md:ml-20'>

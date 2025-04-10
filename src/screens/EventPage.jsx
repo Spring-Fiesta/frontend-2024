@@ -149,7 +149,6 @@ const EventPage = () => {
         </CustomModal>
     </div>
     <Footer/>
-
     </>
   )
 }

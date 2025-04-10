@@ -16,7 +16,7 @@ import benq from '../images/benq.png'
 const Sponsors = () => {
   return (
     <div> 
-        <Navbar></Navbar>
+        <Navbar />
         <div className='overflow-x-hidden min-h-screen overflow-hidden'>
             <div className=' sm:h-[75vh] grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-64 mt-10 relative'>
                 <div className='flex flex-col justify-start md:ml-12 lg:ml-24 md:justify-start items-center md:items-start relative z-10'>
@@ -78,8 +78,8 @@ const Sponsors = () => {
                     <img src={sponsors_img3} alt="Sponsor" className='w-64 md:w-80 lg:w-96 h-auto object-contain' />
                 </div>
             </div>
-            
-            <Footer></Footer>
+            <div className="md:mb-20"></div>
+            <Footer />
         </div>
     </div>
   )

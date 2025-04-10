@@ -2,6 +2,7 @@ import React, { useState, useEffect, useCallback } from "react";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import Navbar from "../components/Navbar";
 import "../styles/gallery.css";
+import Footer from "../components/Footer";
 import Carousel from "../components/Carousel";
 
 const images = Array.from({ length: 30 }, (_, i) => ({
@@ -55,7 +56,7 @@ export default function Gallery() {
   return (
     <div className="gallery-wrapper">
       <Navbar />
-      <h1 className="gallery-title">Gallery</h1>
+      <h1 className="gallery-title mt-5">Gallery</h1>
       <Carousel />
 
       {/* Grid */}
@@ -94,6 +95,8 @@ export default function Gallery() {
           </div>
         </div>
       )}
+      <div className="mb-14" />
+      <Footer/>
     </div>
   );
 }

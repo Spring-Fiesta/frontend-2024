@@ -56,10 +56,10 @@ export default function Carousel() {
           />
         </div>
         <div className="carousel-overlay">
-          <button className="carousel-btn left" onClick={manualPrev}>
+          <button className="carousel-btn left-10 flex items-center justify-center" onClick={manualPrev}>
             <ChevronLeft size={24} />
           </button>
-          <button className="carousel-btn right" onClick={manualNext}>
+          <button className="carousel-btn right-10 flex items-center justify-center" onClick={manualNext}>
             <ChevronRight size={24} />
           </button>
         </div>
