@@ -150,12 +150,6 @@ const CorporateCrime = () => {
     }
   };
 
-  function hasCookie(key) {
-    return document.cookie
-      .split(";")
-      .some((cookie) => cookie.trim().startsWith(key + "="));
-  }
-
   return (
     <div className="relative min-h-screen bg-black text-white overflow-hidden">
       {/* Responsive Navbar */}
