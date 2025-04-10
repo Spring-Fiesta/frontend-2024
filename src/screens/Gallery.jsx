@@ -1,8 +1,9 @@
-import React, { useState, useEffect, useRef, useCallback } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 import Navbar from "../components/Navbar";
 import "../styles/gallery.css";
 import Footer from "../components/Footer";
+import Carousel from "../components/Carousel";
 
 const images = Array.from({ length: 30 }, (_, i) => ({
   id: i + 1,
@@ -13,19 +14,6 @@ const images = Array.from({ length: 30 }, (_, i) => ({
 export default function Gallery() {
   const [selectedImage, setSelectedImage] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [carouselIndex, setCarouselIndex] = useState(0);
-  const [direction, setDirection] = useState("next");
-
-  const intervalRef = useRef();
-
-  useEffect(() => {
-    intervalRef.current = setInterval(() => {
-      setDirection("next");
-      setCarouselIndex((prev) => (prev + 1) % images.length);
-    }, 4000);
-
-    return () => clearInterval(intervalRef.current);
-  }, []);
 
   useEffect(() => {
     document.body.style.overflow = selectedImage ? "hidden" : "auto";
@@ -33,16 +21,6 @@ export default function Gallery() {
       document.body.style.overflow = "auto";
     };
   }, [selectedImage]);
-
-  const manualPrev = () => {
-    setDirection("prev");
-    setCarouselIndex((prev) => (prev - 1 + images.length) % images.length);
-  };
-
-  const manualNext = () => {
-    setDirection("next");
-    setCarouselIndex((prev) => (prev + 1) % images.length);
-  };
 
   const openImage = (index) => {
     setSelectedImage(images[index]);
